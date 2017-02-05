@@ -1,0 +1,3094 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://associationtest.strikingly.com/ -->
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" class="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Association test on Strikingly</title>
+    <script src="./Association test on Strikingly_files/cb=gapi.loaded_1" async=""></script>
+    <script src="./Association test on Strikingly_files/cb=gapi.loaded_0" async=""></script>
+    <script type="text/javascript" src="./Association test on Strikingly_files/74f55de04c"></script>
+    <script src="./Association test on Strikingly_files/beacon.js" async=""></script>
+    <script src="./Association test on Strikingly_files/nr-spa-998.min.js"></script>
+    <script type="text/javascript" async="" src="./Association test on Strikingly_files/keen-2.1.0-min.js"></script>
+    <script async="" src="./Association test on Strikingly_files/analytics.js"></script>
+    <script type="text/javascript">
+        window.NREUM || (NREUM = {});
+        NREUM.info = {
+            "beacon": "bam.nr-data.net",
+            "errorBeacon": "bam.nr-data.net",
+            "licenseKey": "74f55de04c",
+            "applicationID": "4870173",
+            "transactionName": "IlcLQxBeWFoHShYWSgRKOkQLRVFFTUtRDE4=",
+            "queueTime": 1,
+            "applicationTime": 1215,
+            "agent": "",
+            "atts": "GhoQFVhKFlAXVFU8TBNURw1AWUBCEgIWTFgSSwpUC1BAXw1WTQZKFRYWQxBYX18MX1UaFwJXCBhATEk="
+        }
+    </script>
+    <script type="text/javascript">
+        (window.NREUM || (NREUM = {})).loader_config = {
+            xpid: "UQcOWVBADAsHVFBVBA=="
+        };
+        window.NREUM || (NREUM = {}), __nr_require = function(t, e, n) {
+            function r(n) {
+                if (!e[n]) {
+                    var o = e[n] = {
+                        exports: {}
+                    };
+                    t[n][0].call(o.exports, function(e) {
+                        var o = t[n][1][e];
+                        return r(o || e)
+                    }, o, o.exports)
+                }
+                return e[n].exports
+            }
+            if ("function" == typeof __nr_require) return __nr_require;
+            for (var o = 0; o < n.length; o++) r(n[o]);
+            return r
+        }({
+            1: [function(t, e, n) {
+                function r(t) {
+                    try {
+                        c.console && console.log(t)
+                    } catch (e) {}
+                }
+                var o, i = t("ee"),
+                    a = t(19),
+                    c = {};
+                try {
+                    o = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (c.console = !0, o.indexOf("dev") !== -1 && (c.dev = !0), o.indexOf("nr_dev") !== -1 && (c.nrDev = !0))
+                } catch (s) {}
+                c.nrDev && i.on("internal-error", function(t) {
+                    r(t.stack)
+                }), c.dev && i.on("fn-err", function(t, e, n) {
+                    r(n.stack)
+                }), c.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(c, function(t, e) {
+                    return t
+                }).join(", ")))
+            }, {}],
+            2: [function(t, e, n) {
+                function r(t, e, n, r, o) {
+                    try {
+                        h ? h -= 1 : i("err", [o || new UncaughtException(t, e, n)])
+                    } catch (c) {
+                        try {
+                            i("ierr", [c, (new Date).getTime(), !0])
+                        } catch (s) {}
+                    }
+                    return "function" == typeof f && f.apply(this, a(arguments))
+                }
+
+                function UncaughtException(t, e, n) {
+                    this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n
+                }
+
+                function o(t) {
+                    i("err", [t, (new Date).getTime()])
+                }
+                var i = t("handle"),
+                    a = t(20),
+                    c = t("ee"),
+                    s = t("loader"),
+                    f = window.onerror,
+                    u = !1,
+                    h = 0;
+                s.features.err = !0, t(1), window.onerror = r;
+                try {
+                    throw new Error
+                } catch (p) {
+                    "stack" in p && (t(12), t(11), "addEventListener" in window && t(6), s.xhrWrappable && t(13), u = !0)
+                }
+                c.on("fn-start", function(t, e, n) {
+                    u && (h += 1)
+                }), c.on("fn-err", function(t, e, n) {
+                    u && (this.thrown = !0, o(n))
+                }), c.on("fn-end", function() {
+                    u && !this.thrown && h > 0 && (h -= 1)
+                }), c.on("internal-error", function(t) {
+                    i("ierr", [t, (new Date).getTime(), !0])
+                })
+            }, {}],
+            3: [function(t, e, n) {
+                t("loader").features.ins = !0
+            }, {}],
+            4: [function(t, e, n) {
+                function r() {
+                    j++, S = y.hash, this[u] = Date.now()
+                }
+
+                function o() {
+                    j--, y.hash !== S && i(0, !0);
+                    var t = Date.now();
+                    this[l] = ~~this[l] + t - this[u], this[h] = t
+                }
+
+                function i(t, e) {
+                    x.emit("newURL", ["" + y, e])
+                }
+
+                function a(t, e) {
+                    t.on(e, function() {
+                        this[e] = Date.now()
+                    })
+                }
+                var c = "-start",
+                    s = "-end",
+                    f = "-body",
+                    u = "fn" + c,
+                    h = "fn" + s,
+                    p = "cb" + c,
+                    d = "cb" + s,
+                    l = "jsTime",
+                    m = "fetch",
+                    v = "addEventListener",
+                    w = window,
+                    y = w.location;
+                if (w[v]) {
+                    var g = t(9),
+                        b = t(10),
+                        x = t(8),
+                        E = t(6),
+                        T = t(12),
+                        O = t(7),
+                        R = t(13),
+                        P = t("ee"),
+                        D = P.get("tracer");
+                    t(14), t("loader").features.spa = !0;
+                    var S, N = w[v],
+                        j = 0;
+                    P.on(u, r), P.on(p, r), P.on(h, o), P.on(d, o), P.buffer([u, h, "xhr-done", "xhr-resolved"]), E.buffer([u]), T.buffer(["setTimeout" + s, "clearTimeout" + c, u]), R.buffer([u, "new-xhr", "send-xhr" + c]), O.buffer(
+                        [m + c, m + "-done", m + f + c, m + f + s]), x.buffer(["newURL"]), g.buffer([u]), b.buffer(["propagate", p, d, "executor-err", "resolve" + c]), D.buffer([u, "no-" + u]), a(R, "send-xhr" + c), a(P,
+                        "xhr-resolved"), a(P, "xhr-done"), a(O, m + c), a(O, m + "-done"), x.on("pushState-end", i), x.on("replaceState-end", i), N("hashchange", i, !0), N("load", i, !0), N("popstate", function() {
+                        i(0, j > 1)
+                    }, !0)
+                }
+            }, {}],
+            5: [function(t, e, n) {
+                function r(t) {}
+                if (window.performance && window.performance.timing && window.performance.getEntriesByType) {
+                    var o = t("ee"),
+                        i = t("handle"),
+                        a = t(12),
+                        c = t(11),
+                        s = "learResourceTimings",
+                        f = "addEventListener",
+                        u = "resourcetimingbufferfull",
+                        h = "bstResource",
+                        p = "resource",
+                        d = "-start",
+                        l = "-end",
+                        m = "fn" + d,
+                        v = "fn" + l,
+                        w = "bstTimer",
+                        y = "pushState";
+                    t("loader").features.stn = !0, t(8);
+                    var g = NREUM.o.EV;
+                    o.on(m, function(t, e) {
+                        var n = t[0];
+                        n instanceof g && (this.bstStart = Date.now())
+                    }), o.on(v, function(t, e) {
+                        var n = t[0];
+                        n instanceof g && i("bst", [n, e, this.bstStart, Date.now()])
+                    }), a.on(m, function(t, e, n) {
+                        this.bstStart = Date.now(), this.bstType = n
+                    }), a.on(v, function(t, e) {
+                        i(w, [e, this.bstStart, Date.now(), this.bstType])
+                    }), c.on(m, function() {
+                        this.bstStart = Date.now()
+                    }), c.on(v, function(t, e) {
+                        i(w, [e, this.bstStart, Date.now(), "requestAnimationFrame"])
+                    }), o.on(y + d, function(t) {
+                        this.time = Date.now(), this.startPath = location.pathname + location.hash
+                    }), o.on(y + l, function(t) {
+                        i("bstHist", [location.pathname + location.hash, this.startPath, this.time])
+                    }), f in window.performance && (window.performance["c" + s] ? window.performance[f](u, function(t) {
+                        i(h, [window.performance.getEntriesByType(p)]), window.performance["c" + s]()
+                    }, !1) : window.performance[f]("webkit" + u, function(t) {
+                        i(h, [window.performance.getEntriesByType(p)]), window.performance["webkitC" + s]()
+                    }, !1)), document[f]("scroll", r, !1), document[f]("keypress", r, !1), document[f]("click", r, !1)
+                }
+            }, {}],
+            6: [function(t, e, n) {
+                function r(t) {
+                    for (var e = t; e && !e.hasOwnProperty(u);) e = Object.getPrototypeOf(e);
+                    e && o(e)
+                }
+
+                function o(t) {
+                    c.inPlace(t, [u, h], "-", i)
+                }
+
+                function i(t, e) {
+                    return t[1]
+                }
+                var a = t("ee").get("events"),
+                    c = t(21)(a, !0),
+                    s = t("gos"),
+                    f = XMLHttpRequest,
+                    u = "addEventListener",
+                    h = "removeEventListener";
+                e.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (o(window), o(f.prototype)), a.on(u + "-start", function(t, e) {
+                    var n = t[1],
+                        r = s(n, "nr@wrapped", function() {
+                            function t() {
+                                if ("function" == typeof n.handleEvent) return n.handleEvent.apply(n, arguments)
+                            }
+                            var e = {
+                                object: t,
+                                "function": n
+                            }[typeof n];
+                            return e ? c(e, "fn-", null, e.name || "anonymous") : n
+                        });
+                    this.wrapped = t[1] = r
+                }), a.on(h + "-start", function(t) {
+                    t[1] = this.wrapped || t[1]
+                })
+            }, {}],
+            7: [function(t, e, n) {
+                function r(t, e, n) {
+                    var r = t[e];
+                    "function" == typeof r && (t[e] = function() {
+                        var t = r.apply(this, arguments);
+                        return o.emit(n + "start", arguments, t), t.then(function(e) {
+                            return o.emit(n + "end", [null, e], t), e
+                        }, function(e) {
+                            throw o.emit(n + "end", [e], t), e
+                        })
+                    })
+                }
+                var o = t("ee").get("fetch"),
+                    i = t(19);
+                e.exports = o;
+                var a = window,
+                    c = "fetch-",
+                    s = c + "body-",
+                    f = ["arrayBuffer", "blob", "json", "text", "formData"],
+                    u = a.Request,
+                    h = a.Response,
+                    p = a.fetch,
+                    d = "prototype";
+                u && h && p && (i(f, function(t, e) {
+                    r(u[d], e, s), r(h[d], e, s)
+                }), r(a, "fetch", c), o.on(c + "end", function(t, e) {
+                    var n = this;
+                    e ? e.clone().arrayBuffer().then(function(t) {
+                        n.rxSize = t.byteLength, o.emit(c + "done", [null, e], n)
+                    }) : o.emit(c + "done", [t], n)
+                }))
+            }, {}],
+            8: [function(t, e, n) {
+                var r = t("ee").get("history"),
+                    o = t(21)(r);
+                e.exports = r, o.inPlace(window.history, ["pushState", "replaceState"], "-")
+            }, {}],
+            9: [function(t, e, n) {
+                var r = t("ee").get("mutation"),
+                    o = t(21)(r),
+                    i = NREUM.o.MO;
+                e.exports = r, i && (window.MutationObserver = function(t) {
+                    return this instanceof i ? new i(o(t, "fn-")) : i.apply(this, arguments)
+                }, MutationObserver.prototype = i.prototype)
+            }, {}],
+            10: [function(t, e, n) {
+                function r(t) {
+                    var e = a.context(),
+                        n = c(t, "executor-", e),
+                        r = new f(n);
+                    return a.context(r).getCtx = function() {
+                        return e
+                    }, a.emit("new-promise", [r, e], e), r
+                }
+
+                function o(t, e) {
+                    return e
+                }
+                var i = t(21),
+                    a = t("ee").get("promise"),
+                    c = i(a),
+                    s = t(19),
+                    f = NREUM.o.PR;
+                e.exports = a, f && (window.Promise = r, ["all", "race"].forEach(function(t) {
+                    var e = f[t];
+                    f[t] = function(n) {
+                        function r(t) {
+                            return function() {
+                                a.emit("propagate", [null, !o], i), o = o || !t
+                            }
+                        }
+                        var o = !1;
+                        s(n, function(e, n) {
+                            Promise.resolve(n).then(r("all" === t), r(!1))
+                        });
+                        var i = e.apply(f, arguments),
+                            c = f.resolve(i);
+                        return c
+                    }
+                }), ["resolve", "reject"].forEach(function(t) {
+                    var e = f[t];
+                    f[t] = function(t) {
+                        var n = e.apply(f, arguments);
+                        return t !== n && a.emit("propagate", [t, !0], n), n
+                    }
+                }), f.prototype["catch"] = function(t) {
+                    return this.then(null, t)
+                }, f.prototype = Object.create(f.prototype, {
+                    constructor: {
+                        value: r
+                    }
+                }), s(Object.getOwnPropertyNames(f), function(t, e) {
+                    try {
+                        r[e] = f[e]
+                    } catch (n) {}
+                }), a.on("executor-start", function(t) {
+                    t[0] = c(t[0], "resolve-", this), t[1] = c(t[1], "resolve-", this)
+                }), a.on("executor-err", function(t, e, n) {
+                    t[1](n)
+                }), c.inPlace(f.prototype, ["then"], "then-", o), a.on("then-start", function(t, e) {
+                    this.promise = e, t[0] = c(t[0], "cb-", this), t[1] = c(t[1], "cb-", this)
+                }), a.on("then-end", function(t, e, n) {
+                    this.nextPromise = n;
+                    var r = this.promise;
+                    a.emit("propagate", [r, !0], n)
+                }), a.on("cb-end", function(t, e, n) {
+                    a.emit("propagate", [n, !0], this.nextPromise)
+                }), a.on("propagate", function(t, e, n) {
+                    this.getCtx && !e || (this.getCtx = function() {
+                        if (t instanceof Promise) var e = a.context(t);
+                        return e && e.getCtx ? e.getCtx() : this
+                    })
+                }), r.toString = function() {
+                    return "" + f
+                })
+            }, {}],
+            11: [function(t, e, n) {
+                var r = t("ee").get("raf"),
+                    o = t(21)(r),
+                    i = "equestAnimationFrame";
+                e.exports = r, o.inPlace(window, ["r" + i, "mozR" + i, "webkitR" + i, "msR" + i], "raf-"), r.on("raf-start", function(t) {
+                    t[0] = o(t[0], "fn-")
+                })
+            }, {}],
+            12: [function(t, e, n) {
+                function r(t, e, n) {
+                    t[0] = a(t[0], "fn-", null, n)
+                }
+
+                function o(t, e, n) {
+                    this.method = n, this.timerDuration = "number" == typeof t[1] ? t[1] : 0, t[0] = a(t[0], "fn-", this, n)
+                }
+                var i = t("ee").get("timer"),
+                    a = t(21)(i),
+                    c = "setTimeout",
+                    s = "setInterval",
+                    f = "clearTimeout",
+                    u = "-start",
+                    h = "-";
+                e.exports = i, a.inPlace(window, [c, "setImmediate"], c + h), a.inPlace(window, [s], s + h), a.inPlace(window, [f, "clearImmediate"], f + h), i.on(s + u, r), i.on(c + u, o)
+            }, {}],
+            13: [function(t, e, n) {
+                function r(t, e) {
+                    h.inPlace(e, ["onreadystatechange"], "fn-", c)
+                }
+
+                function o() {
+                    var t = this,
+                        e = u.context(t);
+                    t.readyState > 3 && !e.resolved && (e.resolved = !0, u.emit("xhr-resolved", [], t)), h.inPlace(t, v, "fn-", c)
+                }
+
+                function i(t) {
+                    w.push(t), l && (g = -g, b.data = g)
+                }
+
+                function a() {
+                    for (var t = 0; t < w.length; t++) r([], w[t]);
+                    w.length && (w = [])
+                }
+
+                function c(t, e) {
+                    return e
+                }
+
+                function s(t, e) {
+                    for (var n in t) e[n] = t[n];
+                    return e
+                }
+                t(6);
+                var f = t("ee"),
+                    u = f.get("xhr"),
+                    h = t(21)(u),
+                    p = NREUM.o,
+                    d = p.XHR,
+                    l = p.MO,
+                    m = "readystatechange",
+                    v = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"],
+                    w = [];
+                e.exports = u;
+                var y = window.XMLHttpRequest = function(t) {
+                    var e = new d(t);
+                    try {
+                        u.emit("new-xhr", [e], e), e.addEventListener(m, o, !1)
+                    } catch (n) {
+                        try {
+                            u.emit("internal-error", [n])
+                        } catch (r) {}
+                    }
+                    return e
+                };
+                if (s(d, y), y.prototype = d.prototype, h.inPlace(y.prototype, ["open", "send"], "-xhr-", c), u.on("send-xhr-start", function(t, e) {
+                        r(t, e), i(e)
+                    }), u.on("open-xhr-start", r), l) {
+                    var g = 1,
+                        b = document.createTextNode(g);
+                    new l(a).observe(b, {
+                        characterData: !0
+                    })
+                } else f.on("fn-end", function(t) {
+                    t[0] && t[0].type === m || a()
+                })
+            }, {}],
+            14: [function(t, e, n) {
+                function r(t) {
+                    var e = this.params,
+                        n = this.metrics;
+                    if (!this.ended) {
+                        this.ended = !0;
+                        for (var r = 0; r < h; r++) t.removeEventListener(u[r], this.listener, !1);
+                        if (!e.aborted) {
+                            if (n.duration = (new Date).getTime() - this.startTime, 4 === t.readyState) {
+                                e.status = t.status;
+                                var i = o(t, this.lastSize);
+                                if (i && (n.rxSize = i), this.sameOrigin) {
+                                    var a = t.getResponseHeader("X-NewRelic-App-Data");
+                                    a && (e.cat = a.split(", ").pop())
+                                }
+                            } else e.status = 0;
+                            n.cbTime = this.cbTime, f.emit("xhr-done", [t], t), c("xhr", [e, n, this.startTime])
+                        }
+                    }
+                }
+
+                function o(t, e) {
+                    var n = t.responseType;
+                    if ("json" === n && null !== e) return e;
+                    var r = "arraybuffer" === n || "blob" === n || "json" === n ? t.response : t.responseText;
+                    return l(r)
+                }
+
+                function i(t, e) {
+                    var n = s(e),
+                        r = t.params;
+                    r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.sameOrigin = n.sameOrigin
+                }
+                var a = t("loader");
+                if (a.xhrWrappable) {
+                    var c = t("handle"),
+                        s = t(15),
+                        f = t("ee"),
+                        u = ["load", "error", "abort", "timeout"],
+                        h = u.length,
+                        p = t("id"),
+                        d = t(18),
+                        l = t(17),
+                        m = window.XMLHttpRequest;
+                    a.features.xhr = !0, t(13), f.on("new-xhr", function(t) {
+                        var e = this;
+                        e.totalCbs = 0, e.called = 0, e.cbTime = 0, e.end = r, e.ended = !1, e.xhrGuids = {}, e.lastSize = null, d && (d > 34 || d < 10) || window.opera || t.addEventListener("progress", function(t) {
+                            e.lastSize = t.loaded
+                        }, !1)
+                    }), f.on("open-xhr-start", function(t) {
+                        this.params = {
+                            method: t[0]
+                        }, i(this, t[1]), this.metrics = {}
+                    }), f.on("open-xhr-end", function(t, e) {
+                        "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid)
+                    }), f.on("send-xhr-start", function(t, e) {
+                        var n = this.metrics,
+                            r = t[0],
+                            o = this;
+                        if (n && r) {
+                            var i = l(r);
+                            i && (n.txSize = i)
+                        }
+                        this.startTime = (new Date).getTime(), this.listener = function(t) {
+                            try {
+                                "abort" === t.type && (o.params.aborted = !0), ("load" !== t.type || o.called === o.totalCbs && (o.onloadCalled || "function" != typeof e.onload)) && o.end(e)
+                            } catch (n) {
+                                try {
+                                    f.emit("internal-error", [n])
+                                } catch (r) {}
+                            }
+                        };
+                        for (var a = 0; a < h; a++) e.addEventListener(u[a], this.listener, !1)
+                    }), f.on("xhr-cb-time", function(t, e, n) {
+                        this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n)
+                    }), f.on("xhr-load-added", function(t, e) {
+                        var n = "" + p(t) + !!e;
+                        this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1)
+                    }), f.on("xhr-load-removed", function(t, e) {
+                        var n = "" + p(t) + !!e;
+                        this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1)
+                    }), f.on("addEventListener-end", function(t, e) {
+                        e instanceof m && "load" === t[0] && f.emit("xhr-load-added", [t[1], t[2]], e)
+                    }), f.on("removeEventListener-end", function(t, e) {
+                        e instanceof m && "load" === t[0] && f.emit("xhr-load-removed", [t[1], t[2]], e)
+                    }), f.on("fn-start", function(t, e, n) {
+                        e instanceof m && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = (new Date).getTime()))
+                    }), f.on("fn-end", function(t, e) {
+                        this.xhrCbStart && f.emit("xhr-cb-time", [(new Date).getTime() - this.xhrCbStart, this.onload, e], e)
+                    })
+                }
+            }, {}],
+            15: [function(t, e, n) {
+                e.exports = function(t) {
+                    var e = document.createElement("a"),
+                        n = window.location,
+                        r = {};
+                    e.href = t, r.port = e.port;
+                    var o = e.href.split("://");
+                    !r.port && o[1] && (r.port = o[1].split("/")[0].split("@").pop().split(":")[1]), r.port && "0" !== r.port || (r.port = "https" === o[0] ? "443" : "80"), r.hostname = e.hostname || n.hostname, r.pathname = e.pathname,
+                        r.protocol = o[0], "/" !== r.pathname.charAt(0) && (r.pathname = "/" + r.pathname);
+                    var i = !e.protocol || ":" === e.protocol || e.protocol === n.protocol,
+                        a = e.hostname === document.domain && e.port === n.port;
+                    return r.sameOrigin = i && (!e.hostname || a), r
+                }
+            }, {}],
+            16: [function(t, e, n) {
+                function r() {}
+
+                function o(t, e, n) {
+                    return function() {
+                        return i(t, [(new Date).getTime()].concat(c(arguments)), e ? null : this, n), e ? void 0 : this
+                    }
+                }
+                var i = t("handle"),
+                    a = t(19),
+                    c = t(20),
+                    s = t("ee").get("tracer"),
+                    f = NREUM;
+                "undefined" == typeof window.newrelic && (newrelic = f);
+                var u = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit"],
+                    h = "api-",
+                    p = h + "ixn-";
+                a(u, function(t, e) {
+                    f[e] = o(h + e, !0, "api")
+                }), f.addPageAction = o(h + "addPageAction", !0), f.setCurrentRouteName = o(h + "routeName", !0), e.exports = newrelic, f.interaction = function() {
+                    return (new r).get()
+                };
+                var d = r.prototype = {
+                    createTracer: function(t, e) {
+                        var n = {},
+                            r = this,
+                            o = "function" == typeof e;
+                        return i(p + "tracer", [Date.now(), t, n], r),
+                            function() {
+                                if (s.emit((o ? "" : "no-") + "fn-start", [Date.now(), r, o], n), o) try {
+                                    return e.apply(this, arguments)
+                                } finally {
+                                    s.emit("fn-end", [Date.now()], n)
+                                }
+                            }
+                    }
+                };
+                a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function(t, e) {
+                    d[e] = o(p + e)
+                }), newrelic.noticeError = function(t) {
+                    "string" == typeof t && (t = new Error(t)), i("err", [t, (new Date).getTime()])
+                }
+            }, {}],
+            17: [function(t, e, n) {
+                e.exports = function(t) {
+                    if ("string" == typeof t && t.length) return t.length;
+                    if ("object" == typeof t) {
+                        if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength;
+                        if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size;
+                        if (!("undefined" != typeof FormData && t instanceof FormData)) try {
+                            return JSON.stringify(t).length
+                        } catch (e) {
+                            return
+                        }
+                    }
+                }
+            }, {}],
+            18: [function(t, e, n) {
+                var r = 0,
+                    o = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);
+                o && (r = +o[1]), e.exports = r
+            }, {}],
+            19: [function(t, e, n) {
+                function r(t, e) {
+                    var n = [],
+                        r = "",
+                        i = 0;
+                    for (r in t) o.call(t, r) && (n[i] = e(r, t[r]), i += 1);
+                    return n
+                }
+                var o = Object.prototype.hasOwnProperty;
+                e.exports = r
+            }, {}],
+            20: [function(t, e, n) {
+                function r(t, e, n) {
+                    e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+                    for (var r = -1, o = n - e || 0, i = Array(o < 0 ? 0 : o); ++r < o;) i[r] = t[e + r];
+                    return i
+                }
+                e.exports = r
+            }, {}],
+            21: [function(t, e, n) {
+                function r(t) {
+                    return !(t && t instanceof Function && t.apply && !t[a])
+                }
+                var o = t("ee"),
+                    i = t(20),
+                    a = "nr@original",
+                    c = Object.prototype.hasOwnProperty,
+                    s = !1;
+                e.exports = function(t, e) {
+                    function n(t, e, n, o) {
+                        function nrWrapper() {
+                            var r, a, c, s;
+                            try {
+                                a = this, r = i(arguments), c = "function" == typeof n ? n(r, a) : n || {}
+                            } catch (f) {
+                                p([f, "", [r, a, o], c])
+                            }
+                            u(e + "start", [r, a, o], c);
+                            try {
+                                return s = t.apply(a, r)
+                            } catch (h) {
+                                throw u(e + "err", [r, a, h], c), h
+                            } finally {
+                                u(e + "end", [r, a, s], c)
+                            }
+                        }
+                        return r(t) ? t : (e || (e = ""), nrWrapper[a] = t, h(t, nrWrapper), nrWrapper)
+                    }
+
+                    function f(t, e, o, i) {
+                        o || (o = "");
+                        var a, c, s, f = "-" === o.charAt(0);
+                        for (s = 0; s < e.length; s++) c = e[s], a = t[c], r(a) || (t[c] = n(a, f ? c + o : o, i, c))
+                    }
+
+                    function u(n, r, o) {
+                        if (!s || e) {
+                            var i = s;
+                            s = !0;
+                            try {
+                                t.emit(n, r, o)
+                            } catch (a) {
+                                p([a, n, r, o])
+                            }
+                            s = i
+                        }
+                    }
+
+                    function h(t, e) {
+                        if (Object.defineProperty && Object.keys) try {
+                            var n = Object.keys(t);
+                            return n.forEach(function(n) {
+                                Object.defineProperty(e, n, {
+                                    get: function() {
+                                        return t[n]
+                                    },
+                                    set: function(e) {
+                                        return t[n] = e, e
+                                    }
+                                })
+                            }), e
+                        } catch (r) {
+                            p([r])
+                        }
+                        for (var o in t) c.call(t, o) && (e[o] = t[o]);
+                        return e
+                    }
+
+                    function p(e) {
+                        try {
+                            t.emit("internal-error", e)
+                        } catch (n) {}
+                    }
+                    return t || (t = o), n.inPlace = f, n.flag = a, n
+                }
+            }, {}],
+            ee: [function(t, e, n) {
+                function r() {}
+
+                function o(t) {
+                    function e(t) {
+                        return t && t instanceof r ? t : t ? s(t, c, i) : i()
+                    }
+
+                    function n(n, r, o) {
+                        if (!p.aborted) {
+                            t && t(n, r, o);
+                            for (var i = e(o), a = l(n), c = a.length, s = 0; s < c; s++) a[s].apply(i, r);
+                            var f = u[y[n]];
+                            return f && f.push([g, n, r, i]), i
+                        }
+                    }
+
+                    function d(t, e) {
+                        w[t] = l(t).concat(e)
+                    }
+
+                    function l(t) {
+                        return w[t] || []
+                    }
+
+                    function m(t) {
+                        return h[t] = h[t] || o(n)
+                    }
+
+                    function v(t, e) {
+                        f(t, function(t, n) {
+                            e = e || "feature", y[n] = e, e in u || (u[e] = [])
+                        })
+                    }
+                    var w = {},
+                        y = {},
+                        g = {
+                            on: d,
+                            emit: n,
+                            get: m,
+                            listeners: l,
+                            context: e,
+                            buffer: v,
+                            abort: a,
+                            aborted: !1
+                        };
+                    return g
+                }
+
+                function i() {
+                    return new r
+                }
+
+                function a() {
+                    (u.api || u.feature) && (p.aborted = !0, u = p.backlog = {})
+                }
+                var c = "nr@context",
+                    s = t("gos"),
+                    f = t(19),
+                    u = {},
+                    h = {},
+                    p = e.exports = o();
+                p.backlog = u
+            }, {}],
+            gos: [function(t, e, n) {
+                function r(t, e, n) {
+                    if (o.call(t, e)) return t[e];
+                    var r = n();
+                    if (Object.defineProperty && Object.keys) try {
+                        return Object.defineProperty(t, e, {
+                            value: r,
+                            writable: !0,
+                            enumerable: !1
+                        }), r
+                    } catch (i) {}
+                    return t[e] = r, r
+                }
+                var o = Object.prototype.hasOwnProperty;
+                e.exports = r
+            }, {}],
+            handle: [function(t, e, n) {
+                function r(t, e, n, r) {
+                    o.buffer([t], r), o.emit(t, e, n)
+                }
+                var o = t("ee").get("handle");
+                e.exports = r, r.ee = o
+            }, {}],
+            id: [function(t, e, n) {
+                function r(t) {
+                    var e = typeof t;
+                    return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, i, function() {
+                        return o++
+                    })
+                }
+                var o = 1,
+                    i = "nr@id",
+                    a = t("gos");
+                e.exports = r
+            }, {}],
+            loader: [function(t, e, n) {
+                function r() {
+                    if (!b++) {
+                        var t = g.info = NREUM.info,
+                            e = h.getElementsByTagName("script")[0];
+                        if (setTimeout(f.abort, 3e4), !(t && t.licenseKey && t.applicationID && e)) return f.abort();
+                        s(w, function(e, n) {
+                            t[e] || (t[e] = n)
+                        }), c("mark", ["onload", a()], null, "api");
+                        var n = h.createElement("script");
+                        n.src = "https://" + t.agent, e.parentNode.insertBefore(n, e)
+                    }
+                }
+
+                function o() {
+                    "complete" === h.readyState && i()
+                }
+
+                function i() {
+                    c("mark", ["domContent", a()], null, "api")
+                }
+
+                function a() {
+                    return (new Date).getTime()
+                }
+                var c = t("handle"),
+                    s = t(19),
+                    f = t("ee"),
+                    u = window,
+                    h = u.document,
+                    p = "addEventListener",
+                    d = "attachEvent",
+                    l = u.XMLHttpRequest,
+                    m = l && l.prototype;
+                NREUM.o = {
+                    ST: setTimeout,
+                    CT: clearTimeout,
+                    XHR: l,
+                    REQ: u.Request,
+                    EV: u.Event,
+                    PR: u.Promise,
+                    MO: u.MutationObserver
+                }, t(16);
+                var v = "" + location,
+                    w = {
+                        beacon: "bam.nr-data.net",
+                        errorBeacon: "bam.nr-data.net",
+                        agent: "js-agent.newrelic.com/nr-spa-998.min.js"
+                    },
+                    y = l && m && m[p] && !/CriOS/.test(navigator.userAgent),
+                    g = e.exports = {
+                        offset: a(),
+                        origin: v,
+                        features: {},
+                        xhrWrappable: y
+                    };
+                h[p] ? (h[p]("DOMContentLoaded", i, !1), u[p]("load", r, !1)) : (h[d]("onreadystatechange", o), u[d]("onload", r)), c("mark", ["firstbyte", a()], null, "api");
+                var b = 0
+            }, {}]
+        }, {}, ["loader", 2, 14, 5, 3, 4]);
+    </script>
+    <meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport" name="viewport">
+    <script>
+        //<![CDATA[
+        window.$S = {};
+        $S.global_conf = {
+            "premium_apps": ["HtmlApp", "EcwidApp", "MailChimpApp", "CeleryApp", "LocuApp"],
+            "environment": "production",
+            "host_suffix": "strikingly.com",
+            "asset_url": "//assets.strikingly.com",
+            "locale": "en",
+            "in_china": false,
+            "browser_locale": null,
+            "is_sxl": false,
+            "user_image_cdn": {
+                "qn": "//7xpea4.com1.z0.glb.clouddn.com"
+            },
+            "SEGMENTIO_API_KEY": "eb3txa37hi",
+            "FACEBOOK_APP_ID": "138736959550286",
+            "WECHAT_APP_ID": null,
+            "WECHAT_MP_APP_ID": "",
+            "KEEN_IO_PROJECT_ID": "5317e03605cd66236a000002",
+            "KEEN_IO_WRITE_KEY": "efd460f8e282891930ff1957321c12b64a6db50694fd0b4a01d01f347920dfa3ce48e8ca249b5ea9917f98865696cfc39bc6814e4743c39af0a4720bb711627d9cf0fe63d5d52c3866c9c1c3178aaec6cbfc1a9ab62a3c9a827d2846a9be93ecf4ee3d61ebee8baaa6a1d735bff6e37b",
+            "FIREBASE_URL": "bobcat.firebaseIO.com",
+            "CLOUDINARY_CLOUD_NAME": "hrscywv4p",
+            "CLOUDINARY_PRESET": "oxbxiyxl",
+            "rollout": {
+                "advanced_layouts": true,
+                "new_mobile_actions": true,
+                "wechat_sharing": false,
+                "new_wechat_oauth": false
+            }
+        };
+        $S.app_instances = [];
+        $S.nav = [{
+            "name": null,
+            "uid": null
+        }];
+        $S.conf = {
+            "pages_show_static_path": "//assets.strikingly.com/assets/pages_show_static-3b7fa915448844ece9dc321c875eaf94.js",
+            "keenio_collection": "strikingly_pageviews",
+            "keenio_collection_sharding": "strikingly_pageviews-11300001-11400000",
+            "keenio_pbs_impression_collection": "strikingly_pbs_impression",
+            "keenio_pbs_conversion_collection": "strikingly_pbs_conversion",
+            "keenio_pageservice_imageshare_collection": "strikingly_pageservice_imageshare",
+            "keenio_page_socialshare_collection": "strikingly_page_socialshare",
+            "keenio_page_framing_collection": "strikingly_page_framing",
+            "keenio_file_download_collection": "strikingly_file_download",
+            "keenio_ecommerce_buyer_landing": "strikingly_ecommerce_buyer_landing",
+            "keenio_ecommerce_buyer_viewed_checkout_dialog": "strikingly_ecommerce_buyer_viewed_checkout_dialog",
+            "keenio_ecommerce_buyer_completed_shipping_address": "strikingly_ecommerce_buyer_completed_shipping_address",
+            "keenio_ecommerce_buyer_selected_payment_method": "strikingly_ecommerce_buyer_selected_payment_method",
+            "keenio_ecommerce_buyer_canceled_order": "strikingly_ecommerce_buyer_canceled_order",
+            "keenio_ecommerce_buyer_added_item_to_cart": "strikingly_ecommerce_buyer_added_item_to_cart",
+            "is_screenshot_rendering": false,
+            "contact_form_layouts_feature": true,
+            "ecommerce_stripe_alipay": false,
+            "headless_render": null,
+            "wx_instant_follow": false
+        };
+        $S.fonts = {
+            "abril fatface": "\"abril fatface\", georgia, serif",
+            "quando": "\"quando\", serif",
+            "josefin slab": "\"josefin slab\", georgia, serif",
+            "trocchi": "trocchi, georgia, serif",
+            "lato": "lato, helvetica, sans-serif",
+            "roboto": "roboto, helvetica, sans-serif",
+            "raleway": "raleway, helvetica, sans-serif",
+            "playfair display": "\"playfair display\", serif",
+            "bitter": "bitter, georgia, serif",
+            "vollkorn": "\"vollkorn\", times, georgia, serif",
+            "titillium": "\"titillium web\", titillium, helvetica, sans-serif",
+            "bebas neue": "\"bebas neue\", bebas, helvetica, sans-serif",
+            "brandon": "\"brandon grotesque\", brandon, helvetica, sans-serif",
+            "tisa": "tisa, georgia, serif",
+            "garamond": "garamond, serif",
+            "gotham rounded": "\"gotham rounded\", helvetica, sans-serif",
+            "arial": "arial, sans-serif",
+            "georgia": "georgia, serif",
+            "arapey": "arapey, georgia, serif",
+            "titillium web": "\"titillium web\", titillium, helvetica, sans-serif",
+            "dosis": "dosis, \"terminal dosis\", helvetica, sans-serif",
+            "arvo": "arvo, georgia, serif",
+            "roboto slab": "\"roboto slab\", helvetica, sans-serif",
+            "montserrat": "montserrat, helvetica, sans-serif",
+            "nunito": "nunito, helvetica, sans-serif",
+            "archivo narrow": "\"archivo narrow\", helvetica, sans-serif",
+            "cardo": "cardo, georgia, serif",
+            "old standard tt": "\"old standard tt\", georgia, serif",
+            "pt sans narrow": "\"pt sans narrow\", sans-serif",
+            "source sans pro": "\"source sans pro\", helvetica, sans-serif",
+            "lora": "lora, georgia, serif",
+            "istok web": "\"istok web\", helvetica, sans-serif",
+            "chewy": "chewy, helvetica, sans-serif",
+            "great vibes": "\"great vibes\", cursive",
+            "parisienne": "parisienne, cursive",
+            "dancing script": "\"dancing script\", cursive",
+            "roboto condensed": "\"roboto condensed\", sans-serif",
+            "open sans": "\"open sans\", helvetica, sans-serif",
+            "hei": "\"Open Sans\", \"Lucida Grande\", \"Verdana\", \"Pingfang SC\", \"Pingfang TC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif",
+            "song": "\"Cardo\", \"STSong\", \"Songti SC\", \"SimSun\", serif",
+            "kai": "\"Times New Roman\", STKaiTi, KaiTi, Kaiti_GB2312, serif"
+        };
+        $S.country_list = {};
+        $S.stores = {
+            "showStatic": {
+                "footerLogoSeoData": {
+                    "anchor_link": "https://www.strikingly.com/?ref=logo\u0026permalink=associationtest\u0026custom_domain=\u0026utm_campaign=footer_pbs\u0026utm_content=http%3A%2F%2Fassociationtest.strikingly.com%2F\u0026utm_medium=user_page\u0026utm_source=footer_logo",
+                    "anchor_text": "Powered by Strikingly - Best website builder for the mobile age"
+                },
+                "isEditMode": false
+            },
+            "pageData": {
+                "type": "Site",
+                "id": "f_3b3eb4d4-ed44-44c0-ae15-ec196a9f7e05",
+                "defaultValue": null,
+                "horizontal": false,
+                "fixedSocialMedia": false,
+                "new_page": true,
+                "showMobileNav": true,
+                "showCookieNotification": false,
+                "showTermsAndConditions": false,
+                "multi_pages": false,
+                "showNav": true,
+                "showFooter": true,
+                "showStrikinglyLogo": true,
+                "showNavigationButtons": false,
+                "showButtons": true,
+                "navFont": "",
+                "titleFont": "",
+                "logoFont": "",
+                "bodyFont": "",
+                "headingFont": "playfair display",
+                "theme": "fresh",
+                "templateVariation": "default",
+                "templatePreset": "",
+                "termsText": null,
+                "fontPreset": null,
+                "pages": [{
+                    "type": "Page",
+                    "id": "f_0b75dbcc-22d7-40aa-b500-4d47c5bc90ab",
+                    "defaultValue": null,
+                    "sections": [{
+                        "type": "Slide",
+                        "id": "f_73c189eb-919d-44e5-9883-1f9bf640f325",
+                        "defaultValue": null,
+                        "template_id": null,
+                        "template_name": "title",
+                        "components": {
+                            "slideSettings": {
+                                "type": "SlideSettings",
+                                "id": "f_dad0e2e4-d12e-4221-b026-caaa20b32c62",
+                                "defaultValue": null,
+                                "show_nav": true,
+                                "nameChanged": null,
+                                "name": "China-Europe Greenfield",
+                                "sync_key": null,
+                                "layout_variation": "center-subTop-normal",
+                                "display_settings": {}
+                            },
+                            "text1": {
+                                "type": "RichText",
+                                "id": "f_ef356eb2-806c-4ac5-b42a-45b43c685aaa",
+                                "defaultValue": false,
+                                "value": "\u003cp style=\"font-size:130%\"\u003eChina-Europe Greenfield Business Club\u003c/p\u003e",
+                                "backupValue": "\u003cdiv\u003e\u003cspan style=\"font-size: 130%;\"\u003eEnjoy the journey\u003c/span\u003e\u003c/div\u003e",
+                                "version": 1
+                            },
+                            "text2": {
+                                "type": "RichText",
+                                "id": "f_aed807ac-2195-4ed6-a1cd-14fac5f6d853",
+                                "defaultValue": false,
+                                "value": "\u003cp\u003e\u003cstrong\u003e\u003cem\u003ePlatform for China-Europe Business Exchanges\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e",
+                                "backupValue": "\u003cdiv\u003e\u003cem\u003eDon't worry about the destination.\u003c/em\u003e\u003c/div\u003e",
+                                "version": 1
+                            },
+                            "text3": {
+                                "type": "RichText",
+                                "id": "f_56b20c39-0d98-49fb-86e8-89542241a343",
+                                "defaultValue": true,
+                                "value": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+                                "backupValue": null,
+                                "version": null
+                            },
+                            "media1": {
+                                "type": "Media",
+                                "id": "f_006bbcea-5994-4295-b06d-755bd9159c62",
+                                "defaultValue": false,
+                                "video": {
+                                    "type": "Video",
+                                    "id": "f_ca225386-3728-4db4-919d-4b98f7e2bd60",
+                                    "defaultValue": true,
+                                    "html": "",
+                                    "url": "http://vimeo.com/12236680",
+                                    "thumbnail_url": null,
+                                    "maxwidth": 700,
+                                    "description": null
+                                },
+                                "image": {
+                                    "type": "Image",
+                                    "id": "f_82d42579-a4aa-4683-a876-95123c8448d4",
+                                    "defaultValue": false,
+                                    "link_url": null,
+                                    "thumb_url": "!",
+                                    "url": "!",
+                                    "caption": "",
+                                    "description": "",
+                                    "storageKey": "1005867/logo_ta2x7m",
+                                    "storage": "c",
+                                    "format": "png",
+                                    "h": 91,
+                                    "w": 511,
+                                    "s": 12334,
+                                    "new_target": true
+                                },
+                                "current": "image"
+                            },
+                            "background1": {
+                                "type": "Background",
+                                "id": "f_a30b402b-7d91-44d9-bf36-583f919f1b89",
+                                "defaultValue": false,
+                                "url": "!",
+                                "textColor": "overlay",
+                                "backgroundVariation": "",
+                                "sizing": "cover",
+                                "userClassName": null,
+                                "videoUrl": "",
+                                "videoHtml": "",
+                                "storageKey": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e",
+                                "storage": "un",
+                                "format": null,
+                                "h": null,
+                                "w": null,
+                                "s": null
+                            },
+                            "button1": {
+                                "type": "Button",
+                                "id": "f_29035c0e-eb86-4f6b-a2d1-bd0f6efbb157",
+                                "defaultValue": true,
+                                "text": "",
+                                "url": "",
+                                "new_target": false
+                            }
+                        }
+                    }, {
+                        "type": "Slide",
+                        "id": "f_010a34c2-7000-46a3-a0b2-12c60f91f0d0",
+                        "defaultValue": null,
+                        "template_id": null,
+                        "template_name": "info",
+                        "components": {
+                            "slideSettings": {
+                                "type": "SlideSettings",
+                                "id": "f_0b5369f4-79a1-4fe8-816a-f83b7054e6bc",
+                                "defaultValue": false,
+                                "show_nav": true,
+                                "nameChanged": null,
+                                "name": "greenfield of creating",
+                                "sync_key": null,
+                                "layout_variation": "box-mediaLeft-text",
+                                "display_settings": {}
+                            },
+                            "background1": {
+                                "type": "Background",
+                                "id": "f_82b33985-d0a4-4978-ac8d-7aa86fad2b66",
+                                "defaultValue": true,
+                                "url": "//uploads.strikinglycdn.com/static/backgrounds/business-2/150.jpg",
+                                "textColor": "overlay",
+                                "backgroundVariation": "",
+                                "sizing": "cover",
+                                "userClassName": null,
+                                "videoUrl": "",
+                                "videoHtml": "",
+                                "storageKey": null,
+                                "storage": null,
+                                "format": null,
+                                "h": null,
+                                "w": null,
+                                "s": null
+                            },
+                            "text1": {
+                                "type": "RichText",
+                                "id": "f_556d27d7-935d-4228-9359-b31d011d6f53",
+                                "defaultValue": false,
+                                "value": "\u003cp\u003egreenfield of creating values for European and chinese companies\u003c/p\u003e",
+                                "backupValue": "\u003cdiv\u003eStats at a glance\u003c/div\u003e",
+                                "version": 1
+                            },
+                            "text2": {
+                                "type": "RichText",
+                                "id": "f_a292cad6-ec6b-4314-8d20-b94c9930a917",
+                                "defaultValue": false,
+                                "value": "\u003cp style=\"font-size: 130%;\"\u003e\u003cem\u003eExplore, Exchange, Brainstorm\u003c/em\u003e\u003c/p\u003e",
+                                "backupValue": "\u003cdiv\u003e\u003cem\u003eWe let the results speak for themselves.\u003c/em\u003e\u003c/div\u003e",
+                                "version": 1
+                            },
+                            "repeatable1": {
+                                "type": "Repeatable",
+                                "id": "f_71f44658-4461-45ab-84fa-4e1bb15e4ad9",
+                                "defaultValue": true,
+                                "list": [{
+                                    "type": "RepeatableItem",
+                                    "id": "f_b83ab375-55b5-4765-904a-a1dab2f32759",
+                                    "defaultValue": null,
+                                    "components": {
+                                        "text1": {
+                                            "type": "RichText",
+                                            "id": "f_4e5402d7-1514-42b5-869a-095ebd3d2e68",
+                                            "defaultValue": false,
+                                            "value": "",
+                                            "backupValue": "\u003cdiv\u003e12,000km\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "text2": {
+                                            "type": "RichText",
+                                            "id": "f_78536f46-d182-44b7-8081-bde7df66cc9d",
+                                            "defaultValue": false,
+                                            "value": "",
+                                            "backupValue": "\u003cdiv\u003eDistance traveled\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "button1": {
+                                            "type": "Button",
+                                            "id": "f_2f3fdb03-6352-41ce-858f-8e890b66a13b",
+                                            "defaultValue": true,
+                                            "text": "",
+                                            "url": "",
+                                            "new_target": null
+                                        }
+                                    }
+                                }, {
+                                    "type": "RepeatableItem",
+                                    "id": "f_73b0102a-a8f0-4821-8810-0e04474ec550",
+                                    "defaultValue": null,
+                                    "components": {
+                                        "text1": {
+                                            "type": "RichText",
+                                            "id": "f_f650137f-99c5-4356-b713-244297f28d78",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003e$60m\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003e$670\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "text2": {
+                                            "type": "RichText",
+                                            "id": "f_890458e3-a193-4c96-9ad6-7a5cd7869ff6",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003erevenues of member companies\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003eSpent on street food\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "button1": {
+                                            "type": "Button",
+                                            "id": "f_b3ff2184-491f-4905-99c0-77d70e9e15eb",
+                                            "defaultValue": true,
+                                            "text": "",
+                                            "url": "",
+                                            "new_target": null
+                                        }
+                                    }
+                                }, {
+                                    "type": "RepeatableItem",
+                                    "id": "f_560b6247-d679-422e-977c-b1f769fd2416",
+                                    "defaultValue": null,
+                                    "components": {
+                                        "text1": {
+                                            "type": "RichText",
+                                            "id": "f_79c8457b-ddc8-472a-959b-045049ca3c27",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003e10\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003e23\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "text2": {
+                                            "type": "RichText",
+                                            "id": "f_519633c9-4a26-49e4-a759-735efc52a0f0",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003eAreas of businesses\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003eStranger selfies taken\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "button1": {
+                                            "type": "Button",
+                                            "id": "f_5e38612f-7388-4e5b-bfd1-c9067dc9e8f2",
+                                            "defaultValue": true,
+                                            "text": "",
+                                            "url": "",
+                                            "new_target": null
+                                        }
+                                    }
+                                }, {
+                                    "type": "RepeatableItem",
+                                    "id": "f_7e9c6b23-46a6-4825-b590-08c30ecb6b34",
+                                    "defaultValue": null,
+                                    "components": {
+                                        "text1": {
+                                            "type": "RichText",
+                                            "id": "f_5cb3c447-0aeb-455f-ac53-571a71b0bf43",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003e100\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003e4\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "text2": {
+                                            "type": "RichText",
+                                            "id": "f_e9851cee-c4e0-4806-8b25-c837d9081b11",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003eClub members\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003eRed-eye train rides\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "button1": {
+                                            "type": "Button",
+                                            "id": "f_619c12a9-c018-49c5-bd72-778911bd416f",
+                                            "defaultValue": true,
+                                            "text": "",
+                                            "url": "",
+                                            "new_target": null
+                                        }
+                                    }
+                                }, {
+                                    "type": "RepeatableItem",
+                                    "id": "f_3bb35f7e-f8ca-44ab-a893-8d32a971e4d2",
+                                    "defaultValue": null,
+                                    "components": {
+                                        "text1": {
+                                            "type": "RichText",
+                                            "id": "f_5cb3c447-0aeb-455f-ac53-571a71b0bf43",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003e4\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003e500\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "text2": {
+                                            "type": "RichText",
+                                            "id": "f_e9851cee-c4e0-4806-8b25-c837d9081b11",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003eForums to organise\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003eSplines reticulated\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "button1": {
+                                            "type": "Button",
+                                            "id": "f_71396bcc-010b-4caf-a8ef-b5c50403ba27",
+                                            "defaultValue": true,
+                                            "text": "",
+                                            "url": "",
+                                            "new_target": null
+                                        }
+                                    }
+                                }],
+                                "components": {
+                                    "text1": {
+                                        "type": "RichText",
+                                        "id": "f_10f67727-afec-42df-8d4e-9ce711665f57",
+                                        "defaultValue": true,
+                                        "value": "500",
+                                        "backupValue": null,
+                                        "version": null
+                                    },
+                                    "text2": {
+                                        "type": "RichText",
+                                        "id": "f_9a49232d-bd38-4618-9d7e-708bd96ab514",
+                                        "defaultValue": true,
+                                        "value": "Clients served",
+                                        "backupValue": null,
+                                        "version": null
+                                    }
+                                }
+                            }
+                        }
+                    }, {
+                        "type": "Slide",
+                        "id": "f_ba8c744e-d3fd-4d16-a80d-78a456df8692",
+                        "defaultValue": null,
+                        "template_id": null,
+                        "template_name": "rows",
+                        "components": {
+                            "slideSettings": {
+                                "type": "SlideSettings",
+                                "id": "f_486ba0e4-48ca-42e1-ad6f-5a05996acaf8",
+                                "defaultValue": false,
+                                "show_nav": true,
+                                "nameChanged": null,
+                                "name": "Club members come from",
+                                "sync_key": null,
+                                "layout_variation": "mediaRight-row-large-text",
+                                "display_settings": {}
+                            },
+                            "background1": {
+                                "type": "Background",
+                                "id": "f_6705ab5b-310c-4aeb-8ee0-b27a34c0b205",
+                                "defaultValue": false,
+                                "url": "https://uploads.strikinglycdn.com/static/backgrounds/cityscape/161.jpg",
+                                "textColor": "overlay",
+                                "backgroundVariation": "",
+                                "sizing": "cover",
+                                "userClassName": null,
+                                "videoUrl": "",
+                                "videoHtml": "",
+                                "storageKey": null,
+                                "storage": null,
+                                "format": null,
+                                "h": 900,
+                                "w": 1600,
+                                "s": null
+                            },
+                            "text1": {
+                                "type": "RichText",
+                                "id": "f_cfcb39ca-d3ad-4630-b49d-c91b73300d9c",
+                                "defaultValue": false,
+                                "value": "\u003cp\u003eClub members come from\u003c/p\u003e",
+                                "backupValue": "\u003cdiv\u003eOur Core Values\u003c/div\u003e",
+                                "version": 1
+                            },
+                            "text2": {
+                                "type": "RichText",
+                                "id": "f_eab48529-44d9-49ed-b778-16d63be4ce9a",
+                                "defaultValue": false,
+                                "value": "\u003cp style=\"font-size:160%\"\u003e\u003cem\u003eConsulting\u003c/em\u003e\u003c/p\u003e\u003cp style=\"font-size:160%\"\u003e\u003cem\u003ePE Investment \u003c/em\u003e\u003c/p\u003e\u003cp style=\"font-size:160%\"\u003e\u003cem\u003eM\u0026amp;A Consulting\u003c/em\u003e\u003c/p\u003e\u003cp style=\"font-size:160%\"\u003e\u003cem\u003eCorporate Senior Management\u003c/em\u003e\u003c/p\u003e",
+                                "backupValue": "\u003cdiv\u003e\u003cem\u003eShow off your projects, features, or clients in this section.\u003c/em\u003e\u003c/div\u003e",
+                                "version": 1
+                            },
+                            "repeatable1": {
+                                "type": "Repeatable",
+                                "id": "f_78f1ac93-45b2-41c0-86cd-a8b3bc92c0ba",
+                                "defaultValue": false,
+                                "list": [{
+                                    "type": "RepeatableItem",
+                                    "id": "f_93133bab-ee29-40c7-8cf3-6087a3217827",
+                                    "defaultValue": null,
+                                    "components": {
+                                        "media1": {
+                                            "type": "Media",
+                                            "id": "f_4aa36846-911f-4391-bd8e-38111073a1dc",
+                                            "defaultValue": true,
+                                            "video": {
+                                                "type": "Video",
+                                                "id": "f_b7fab68f-dcc0-4733-89bd-eef327bb5150",
+                                                "defaultValue": true,
+                                                "html": "",
+                                                "url": "http://vimeo.com/12236680",
+                                                "thumbnail_url": null,
+                                                "maxwidth": 700,
+                                                "description": null
+                                            },
+                                            "image": {
+                                                "type": "Image",
+                                                "id": "f_dc515255-9720-4a74-b512-c33337d0f88e",
+                                                "defaultValue": false,
+                                                "link_url": "",
+                                                "thumb_url": "!",
+                                                "url": "!",
+                                                "caption": "",
+                                                "description": "",
+                                                "storageKey": "1005867/pharma_v2mv6t",
+                                                "storage": "c",
+                                                "format": "jpg",
+                                                "h": 169,
+                                                "w": 310,
+                                                "s": 15039,
+                                                "new_target": true
+                                            },
+                                            "current": "image"
+                                        },
+                                        "text1": {
+                                            "type": "RichText",
+                                            "id": "f_7c2f3ab3-a5ea-4ea7-b666-6e651de7a98b",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003eForum on Pharma\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003eAlways Ahead\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "text2": {
+                                            "type": "RichText",
+                                            "id": "f_d525a1e0-ef74-4a56-83b4-39185a44b390",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003eCross-border biotech investment\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003eA small tagline\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "text3": {
+                                            "type": "RichText",
+                                            "id": "f_6a87dc99-ba1b-43ba-af8b-60a0daa6c998",
+                                            "defaultValue": false,
+                                            "value": "",
+                                            "backupValue": "\u003cdiv\u003e\u003cspan\u003eA sentence or two describing this item. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\u003c/span\u003e\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "button1": {
+                                            "type": "Button",
+                                            "id": "f_6f10e12c-f135-4a4b-9ac7-8c37f5912c5a",
+                                            "defaultValue": true,
+                                            "text": "",
+                                            "url": "",
+                                            "new_target": null
+                                        }
+                                    }
+                                }, {
+                                    "type": "RepeatableItem",
+                                    "id": "f_d537f60d-bee0-4d36-8b35-2f4edae07092",
+                                    "defaultValue": null,
+                                    "components": {
+                                        "media1": {
+                                            "type": "Media",
+                                            "id": "f_9defa8fe-1425-4c76-85e8-ce76b9fb02f4",
+                                            "defaultValue": true,
+                                            "video": {
+                                                "type": "Video",
+                                                "id": "f_4b702519-9440-457e-80dd-e0ebd57e5165",
+                                                "defaultValue": true,
+                                                "html": "",
+                                                "url": "http://vimeo.com/12236680",
+                                                "thumbnail_url": null,
+                                                "maxwidth": 700,
+                                                "description": null
+                                            },
+                                            "image": {
+                                                "type": "Image",
+                                                "id": "f_54cda155-279a-473c-8308-5a8296f8f6d0",
+                                                "defaultValue": false,
+                                                "link_url": null,
+                                                "thumb_url": "!",
+                                                "url": "!",
+                                                "caption": "",
+                                                "description": "",
+                                                "storageKey": "1005867/defence_gjhvmq",
+                                                "storage": "c",
+                                                "format": "jpg",
+                                                "h": 148,
+                                                "w": 275,
+                                                "s": 14622,
+                                                "new_target": true
+                                            },
+                                            "current": "image"
+                                        },
+                                        "text1": {
+                                            "type": "RichText",
+                                            "id": "f_be697218-6c41-40d7-a97a-06a2cf05cec7",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003eForum on Defense\u003c/p\u003e",
+                                            "backupValue": "\u003cdiv\u003eA Small-Town Feel\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "text2": {
+                                            "type": "RichText",
+                                            "id": "f_5178f9de-617d-4ca0-8e5e-7f558457f284",
+                                            "defaultValue": false,
+                                            "value": "\u003cp\u003eNext 10 years' strategy\u003c/p\u003e",
+                                            "backupValue": "A small tagline",
+                                            "version": 1
+                                        },
+                                        "text3": {
+                                            "type": "RichText",
+                                            "id": "f_fd9de9af-bade-40a3-b968-e2fa165edeef",
+                                            "defaultValue": false,
+                                            "value": "",
+                                            "backupValue": "\u003cdiv\u003eA sentence or two describing this item. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\u003c/div\u003e",
+                                            "version": 1
+                                        },
+                                        "button1": {
+                                            "type": "Button",
+                                            "id": "f_bd76fdb9-42a2-4cb4-917a-a49791b13cbe",
+                                            "defaultValue": true,
+                                            "text": "",
+                                            "url": "",
+                                            "new_target": null
+                                        }
+                                    }
+                                }],
+                                "components": {
+                                    "media1": {
+                                        "type": "Media",
+                                        "id": "f_54ef6fde-4f85-4192-b634-afbeb055f5c8",
+                                        "defaultValue": true,
+                                        "video": {
+                                            "type": "Video",
+                                            "id": "f_6f5d6348-1e79-4680-80c1-d76fb7c312e8",
+                                            "defaultValue": true,
+                                            "html": "",
+                                            "url": "http://vimeo.com/12236680",
+                                            "thumbnail_url": null,
+                                            "maxwidth": 700,
+                                            "description": null
+                                        },
+                                        "image": {
+                                            "type": "Image",
+                                            "id": "f_115f0619-7323-45f7-8eb1-4901acc8b68e",
+                                            "defaultValue": true,
+                                            "link_url": null,
+                                            "thumb_url": "//uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/7.jpg",
+                                            "url": "//uploads.strikinglycdn.com/static/backgrounds/striking-pack-3/7.jpg",
+                                            "caption": "",
+                                            "description": "",
+                                            "storageKey": null,
+                                            "storage": null,
+                                            "format": null,
+                                            "h": null,
+                                            "w": null,
+                                            "s": null,
+                                            "new_target": true
+                                        },
+                                        "current": "image"
+                                    },
+                                    "text1": {
+                                        "type": "RichText",
+                                        "id": "f_c9f9df7b-163d-4dc3-85ff-f2bc20ec4636",
+                                        "defaultValue": true,
+                                        "value": "Title Text",
+                                        "backupValue": null,
+                                        "version": null
+                                    },
+                                    "text2": {
+                                        "type": "RichText",
+                                        "id": "f_bb68f451-6ec9-4368-be03-09d2fce2a89a",
+                                        "defaultValue": true,
+                                        "value": "A small tagline",
+                                        "backupValue": null,
+                                        "version": null
+                                    },
+                                    "text3": {
+                                        "type": "RichText",
+                                        "id": "f_2a7584e5-42ab-481f-8c17-2bf0a0ce9b9d",
+                                        "defaultValue": true,
+                                        "value": "A sentence or two describing this item. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+                                        "backupValue": null,
+                                        "version": null
+                                    }
+                                }
+                            }
+                        }
+                    }, {
+                        "type": "Slide",
+                        "id": "f_42964d64-117c-4470-ad0d-4a01c40f51e6",
+                        "defaultValue": true,
+                        "template_id": null,
+                        "template_name": "contact_form",
+                        "components": {
+                            "slideSettings": {
+                                "type": "SlideSettings",
+                                "id": "f_7de04217-6ac2-4f2e-ae03-02629d2a6c4d",
+                                "defaultValue": true,
+                                "show_nav": true,
+                                "nameChanged": null,
+                                "name": "Contact Us",
+                                "sync_key": null,
+                                "layout_variation": null,
+                                "display_settings": {
+                                    "hide_form": false,
+                                    "show_map": false,
+                                    "show_info": false
+                                }
+                            },
+                            "text1": {
+                                "type": "RichText",
+                                "id": "f_edaf2ca8-1954-4b41-aa29-993be09d4940",
+                                "defaultValue": false,
+                                "value": "\u003cp\u003eContact Us\u003c/p\u003e",
+                                "backupValue": "\u003cdiv\u003eContact Us\u003c/div\u003e",
+                                "version": 1
+                            },
+                            "text2": {
+                                "type": "RichText",
+                                "id": "f_6b2e4a7e-d143-4314-bc39-9a063b20e234",
+                                "defaultValue": false,
+                                "value": "\u003cp\u003eDon't be afraid to reach out. You + us = awesome.\u003c/p\u003e",
+                                "backupValue": "\u003cdiv\u003eDon't be afraid to reach out. You + us = awesome.\u003c/div\u003e",
+                                "version": 1
+                            },
+                            "background1": {
+                                "type": "Background",
+                                "id": "f_2e03f5fb-3285-43be-b10a-649e38509212",
+                                "defaultValue": true,
+                                "url": "//uploads.strikinglycdn.com/static/backgrounds/business-2/144.jpg",
+                                "textColor": "overlay",
+                                "backgroundVariation": "",
+                                "sizing": "cover",
+                                "userClassName": null,
+                                "videoUrl": "",
+                                "videoHtml": "",
+                                "storageKey": null,
+                                "storage": null,
+                                "format": null,
+                                "h": null,
+                                "w": null,
+                                "s": null
+                            },
+                            "email1": {
+                                "type": "EmailForm",
+                                "id": "f_2009e409-db16-44bd-b86b-21b8cb1a1e8c",
+                                "defaultValue": true,
+                                "hideMessageBox": false,
+                                "hide_name": false,
+                                "hide_email": false,
+                                "hide_phone_number": null,
+                                "name_label": "Name",
+                                "email_label": "Email",
+                                "phone_number_label": "Phone",
+                                "message_label": "Message",
+                                "submit_label": "Submit",
+                                "thanksMessage": "Thanks for your submission!",
+                                "recipient": "@@V1MkxOQXRZZG0xcnhBckY0WDNkWHBxd25xOHpVQVpDbmdhbjEzTEdBelc0ajA5b280azNabGt6TDhxRDE4TlJJOS0tSU1BSDQ5RHZ5a2NmeVdoTU4xS09FZz09--f18be1ccee0b8b4e95360fba42bcb89b438543cf",
+                                "label": ""
+                            },
+                            "contactInfo1": {
+                                "type": "ContactInfo",
+                                "id": "f_1007a8f5-d8a1-47d7-9f16-df9170519fac",
+                                "defaultValue": null,
+                                "address": "",
+                                "phone": "",
+                                "hours": null,
+                                "email": "xiaoyan.chen@essec.edu"
+                            }
+                        }
+                    }],
+                    "title": null,
+                    "uid": null,
+                    "path": null,
+                    "autoPath": null
+                }],
+                "menu": {
+                    "type": "Menu",
+                    "id": "f_32846edb-6ca7-401c-be1e-65c417f727c0",
+                    "defaultValue": null,
+                    "template_name": "navbar",
+                    "logo": null,
+                    "components": {
+                        "image1": {
+                            "type": "Image",
+                            "id": "f_3a3f1cb4-4ee6-4928-9c0b-5f099dae6710",
+                            "defaultValue": true,
+                            "link_url": "",
+                            "thumb_url": "/assets/icons/transparent.png",
+                            "url": "http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/acax3ilq2tovi0m8k2gw.png",
+                            "caption": "",
+                            "description": "",
+                            "storageKey": null,
+                            "storage": null,
+                            "format": null,
+                            "h": null,
+                            "w": null,
+                            "s": null,
+                            "new_target": true
+                        },
+                        "image2": {
+                            "type": "Image",
+                            "id": "f_44001557-8c26-4289-a882-2dc3781514d4",
+                            "defaultValue": true,
+                            "link_url": null,
+                            "thumb_url": null,
+                            "url": "http://assets.strikingly.com/assets/themes/fresh/power.png",
+                            "caption": "",
+                            "description": "",
+                            "storageKey": null,
+                            "storage": null,
+                            "format": null,
+                            "h": null,
+                            "w": null,
+                            "s": null,
+                            "new_target": true
+                        },
+                        "text1": {
+                            "type": "RichText",
+                            "id": "f_9b24533b-6a9e-468f-b047-fbd3decf9703",
+                            "defaultValue": true,
+                            "value": "\u003cdiv\u003eAPP SHOWCASE\u003c/div\u003e",
+                            "backupValue": null,
+                            "version": null
+                        },
+                        "background1": {
+                            "type": "Background",
+                            "id": "f_b03aae53-c185-4a3c-9124-7dc56c03fed3",
+                            "defaultValue": true,
+                            "url": "//uploads.strikinglycdn.com/page/images/backgrounds/bg6.jpg",
+                            "textColor": "light",
+                            "backgroundVariation": "",
+                            "sizing": "cover",
+                            "userClassName": null,
+                            "videoUrl": "",
+                            "videoHtml": "",
+                            "storageKey": null,
+                            "storage": null,
+                            "format": null,
+                            "h": null,
+                            "w": null,
+                            "s": null
+                        },
+                        "text2": {
+                            "type": "RichText",
+                            "id": "f_e304288f-b0eb-4800-9287-58a77045fea5",
+                            "defaultValue": true,
+                            "value": "Add a subtitle",
+                            "backupValue": null,
+                            "version": null
+                        },
+                        "button1": {
+                            "type": "Button",
+                            "id": "f_fbad2bc9-5c7f-4cc2-ac80-15607e0bf814",
+                            "defaultValue": true,
+                            "text": "Click here",
+                            "url": "http://strikingly.com",
+                            "new_target": true
+                        }
+                    }
+                },
+                "footer": {
+                    "type": "Footer",
+                    "id": "f_5c920ac9-6b7a-4e43-8b1e-83cf57f2cc05",
+                    "defaultValue": null,
+                    "socialMedia": null,
+                    "copyright": null,
+                    "components": {
+                        "socialMedia": {
+                            "type": "SocialMediaList",
+                            "id": "f_27850398-00c3-4da6-84f9-81fd5ad74831",
+                            "defaultValue": false,
+                            "link_list": [{
+                                "type": "Facebook",
+                                "id": "f_b437646e-ea90-45b8-91a7-af66c9ecdc81",
+                                "defaultValue": null,
+                                "url": "",
+                                "link_url": null,
+                                "share_text": null,
+                                "app_id": null,
+                                "show_button": true
+                            }, {
+                                "type": "Twitter",
+                                "id": "f_7365aa40-a988-4656-bb2d-04750ed1ec3b",
+                                "defaultValue": null,
+                                "url": "",
+                                "link_url": null,
+                                "share_text": null,
+                                "show_button": true
+                            }, {
+                                "type": "GPlus",
+                                "id": "f_cf0fdd74-4225-4d08-918b-a7e7f5b1ab7e",
+                                "defaultValue": null,
+                                "url": "",
+                                "link_url": null,
+                                "share_text": null,
+                                "show_button": false
+                            }, {
+                                "type": "LinkedIn",
+                                "id": "f_f3a24e66-f473-4bf4-8019-d5cfb6083c53",
+                                "defaultValue": null,
+                                "url": "",
+                                "link_url": null,
+                                "share_text": null,
+                                "show_button": false
+                            }, {
+                                "type": "Instagram",
+                                "id": "f_0da73e52-98a8-46bc-9bb5-fe07f477b5db",
+                                "defaultValue": null,
+                                "url": "",
+                                "link_url": null,
+                                "share_text": null,
+                                "show_button": false
+                            }],
+                            "button_list": [{
+                                "type": "Facebook",
+                                "id": "f_bbbe1808-edd1-45c5-ae34-6f1e8a069118",
+                                "defaultValue": false,
+                                "url": "",
+                                "link_url": "",
+                                "share_text": "",
+                                "app_id": 543870062356274,
+                                "show_button": true
+                            }, {
+                                "type": "Twitter",
+                                "id": "f_1ac4ad66-6f6b-4c47-8ed9-64a2ec0c58d1",
+                                "defaultValue": false,
+                                "url": "",
+                                "link_url": "",
+                                "share_text": "",
+                                "show_button": true
+                            }, {
+                                "type": "GPlus",
+                                "id": "f_30de0a27-58a3-4d48-bafd-908264df54ad",
+                                "defaultValue": null,
+                                "url": "",
+                                "link_url": "",
+                                "share_text": "",
+                                "show_button": true
+                            }, {
+                                "type": "LinkedIn",
+                                "id": "f_bef98357-2188-46ed-924a-554b702efb61",
+                                "defaultValue": false,
+                                "url": "",
+                                "link_url": "",
+                                "share_text": "",
+                                "show_button": false
+                            }, {
+                                "type": "Pinterest",
+                                "id": "f_a324ccfc-450f-4a07-82c8-bc1831cd8056",
+                                "defaultValue": null,
+                                "url": "",
+                                "link_url": null,
+                                "share_text": null,
+                                "show_button": false
+                            }],
+                            "list_type": null
+                        },
+                        "copyright": {
+                            "type": "RichText",
+                            "id": "f_f4cf80be-b77e-4024-86ad-b7cb919046ea",
+                            "defaultValue": false,
+                            "value": "\u003cp\u003e© 2016\u003c/p\u003e",
+                            "backupValue": "\u003cdiv\u003eCopyright 2015\u003c/div\u003e",
+                            "version": 1
+                        }
+                    },
+                    "layout_variation": null
+                },
+                "submenu": {
+                    "type": "SubMenu",
+                    "id": "f_01e1fc20-a5eb-4cf0-ba65-3b7beabebce6",
+                    "defaultValue": null,
+                    "list": [],
+                    "components": {
+                        "link": {
+                            "type": "Button",
+                            "id": "f_c0f0d2c7-eb9a-4ab1-9eff-ddd818805ca2",
+                            "defaultValue": null,
+                            "text": "Facebook",
+                            "url": "http://www.facebook.com",
+                            "new_target": true
+                        }
+                    }
+                },
+                "customColors": null,
+                "navigation": {}
+            },
+            "pageMeta": {
+                "user": {
+                    "membership": "free",
+                    "id": 1005867
+                },
+                "category": null,
+                "s4_migration": {
+                    "is_migrated": false,
+                    "is_retired_theme": false,
+                    "has_custom_code": false
+                },
+                "page_groups": [],
+                "slide_names": ["China-Europe Greenfield", "greenfield of creating", "Club members come from", "Contact Us"],
+                "theme": {
+                    "name": "perspective"
+                },
+                "connected_sites": [],
+                "linkedin_app": false,
+                "is_weitie_page": false,
+                "forced_locale": "en",
+                "mobile_actions": {
+                    "phone": null,
+                    "sms": null,
+                    "location": null,
+                    "email": null,
+                    "version": "v2",
+                    "actions": []
+                },
+                "current_path": "/",
+                "current_path_params": {},
+                "rollouts": {
+                    "custom_code": true,
+                    "pro_sections": false,
+                    "pro_apps": false,
+                    "new_settings_dialog_feature": true,
+                    "sections_name_sync": true
+                },
+                "site_mode": "show",
+                "google": {
+                    "enable_ga_universal": false,
+                    "analytics_tracker": null,
+                    "analytics_type": null,
+                    "site_checker": null
+                },
+                "facebook_pixel_id": null,
+                "optimizely": {
+                    "project_id": null,
+                    "experiment_id": null
+                },
+                "id": 11313577,
+                "permalink": "associationtest",
+                "created_at": "2016-12-04T09:53:22.772-08:00",
+                "logo_url": "//assets.strikingly.com/assets/fb_images/default-715654470f8f9a657474bf68cefc382f.png",
+                "icon_url": "//assets.strikingly.com/assets/favicon-a57a86ea931ef4674da8d3c9bac29dba.ico",
+                "description": "",
+                "name": "Association test",
+                "social_media_config": {
+                    "title": "Association test",
+                    "image": "//assets.strikingly.com/assets/fb_images/default-715654470f8f9a657474bf68cefc382f.png",
+                    "description": "",
+                    "fb_app_id": "138736959550286"
+                },
+                "keenio_config": {
+                    "keenio_project_id": "5317e03605cd66236a000002",
+                    "keenio_write_key": "efd460f8e282891930ff1957321c12b64a6db50694fd0b4a01d01f347920dfa3ce48e8ca249b5ea9917f98865696cfc39bc6814e4743c39af0a4720bb711627d9cf0fe63d5d52c3866c9c1c3178aaec6cbfc1a9ab62a3c9a827d2846a9be93ecf4ee3d61ebee8baaa6a1d735bff6e37b"
+                },
+                "show_strikingly_logo": true,
+                "show_navigation_buttons": false,
+                "social_media": null,
+                "has_optimizely": false,
+                "optimizely_experiment_id": null,
+                "services": [],
+                "strk_upvt": "Rld5RHVqL2RyMW1UNTRkaWhCYXZpbXk1SHZONEE4M0srK3RqUDRreURDUjVCVUlVWTh3aWZla2JDSWhBUS92U0EwQkRKenBjSXdpb0o0RUI0NU5pcHpIakhENHdzeko1L1ZoSG5SeHJ6WnB5MXdGc2dvS1d5d3FmaWRoSWpOT0dycEFVSDc2UFJ0bk5oeUsxRUYvZVpYcUY4WHRBcEV5K1hYUUhwWEhkWW13PS0tRVFyOE1wUndGZnY0TThiTkhzWmtMUT09--c1249f429c138ad54aad64f9072bf2a3acf5935d",
+                "strk_ga_tracker": "UA-25124444-6",
+                "google_analytics_tracker": null,
+                "google_analytics_type": null,
+                "exception_tracking": true,
+                "ecommerce": {
+                    "seller_wechat_app_id": null
+                }
+            }
+        };
+        $S.blink = {
+            "page": {
+                "logo_url": "//assets.strikingly.com/assets/fb_images/default-715654470f8f9a657474bf68cefc382f.png",
+                "weitie_url": "http://associationtest.weitie.co",
+                "description": "",
+                "name": "Association test"
+            },
+            "conf": {
+                "WECHAT_APP_ID": "wxd009fb01de1ec8b5"
+            }
+        };
+        //]]>
+    </script>
+    <link rel="stylesheet" media="screen" href="./Association test on Strikingly_files/_reset-3883aa74e9ad592d0b5195d748f79e0b.css">
+    <link rel="stylesheet" media="screen" href="./Association test on Strikingly_files/css">
+    <link rel="stylesheet" media="screen" href="./Association test on Strikingly_files/main_v4-2ab33389b26a4e7f033244e33d249119.css">
+    <!--[if lte IE 9]><link rel="stylesheet" media="screen" href="//assets.strikingly.com/assets/themes/perspective/main_v4_split2-d2dd8e855d83c1530ea794f892110ad4.css"/><![endif]-->
+    <link href="http://assets.strikingly.com/assets/favicon-a57a86ea931ef4674da8d3c9bac29dba.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="./Association test on Strikingly_files/default-715654470f8f9a657474bf68cefc382f.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="./Association test on Strikingly_files/default-715654470f8f9a657474bf68cefc382f.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="./Association test on Strikingly_files/default-715654470f8f9a657474bf68cefc382f.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="./Association test on Strikingly_files/default-715654470f8f9a657474bf68cefc382f.png" rel="apple-touch-icon" sizes="152x152">
+    <meta content="Association test" property="og:title">
+    <meta content="http://associationtest.strikingly.com/" property="og:url">
+    <meta content="//assets.strikingly.com/assets/fb_images/default-715654470f8f9a657474bf68cefc382f.png" property="og:image">
+    <meta content="Association test" property="og:site_name">
+    <meta content="" property="og:description">
+    <meta content="Association test" itemprop="name">
+    <meta content="" itemprop="description">
+    <meta content="//assets.strikingly.com/assets/fb_images/default-715654470f8f9a657474bf68cefc382f.png" itemprop="image">
+    <meta content="summary" name="twitter:card">
+    <meta content="Association test" name="twitter:title">
+    <meta content="" name="twitter:description">
+    <meta content="//assets.strikingly.com/assets/fb_images/default-715654470f8f9a657474bf68cefc382f.png" name="twitter:image">
+    <meta content="" name="description">
+    <meta name="strikingly-host-suffix" content="strikingly.com">
+    <meta name="support-helper" content="{&quot;permalink&quot;:&quot;associationtest&quot;,&quot;id&quot;:11313577}">
+    <link rel="canonical" href="http://associationtest.strikingly.com/">
+    <link href="http://assets.strikingly.com/assets/favicon-a57a86ea931ef4674da8d3c9bac29dba.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="asset-url" content="//assets.strikingly.com">
+    <!--[if lte IE 10]><link rel="stylesheet" media="screen" href="//assets.strikingly.com/assets/ie8-396600721214247266c32baf97fdc312.css"/><![endif]--><noscript> &lt;style&gt;
+  .s-entrance-mask .s-section .container { opacity: 1 !important; }
+&lt;/style&gt; </noscript>
+    <script>
+        var _gaq = _gaq || [];
+        if ($S.stores.pageMeta.exception_tracking) {
+            /* load errorception */
+            var _errs = ["518ac810441fb4b7180002fa"];
+            (function(a, b) {
+                a.onerror = function() {
+                    _errs.push(arguments)
+                };
+                var d = function() {
+                    var a = b.createElement("script"),
+                        c = b.getElementsByTagName("script")[0];
+                    a.src = "//d15qhc0lu1ghnk.cloudfront.net/beacon.js";
+                    a.async = !0;
+                    c.parentNode.insertBefore(a, c)
+                };
+                a.addEventListener ? a.addEventListener("load", d, !1) :
+                    a.attachEvent("onload", d)
+            })(window, document);
+        }
+
+        // Google Analytics (Universal) Setup
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', '__ga');
+
+        // configuration for keen.io
+        var Keen = Keen || {
+            configure: function(e) {
+                this._cf = e
+            },
+            addEvent: function(e, t, n, i) {
+                this._eq = this._eq || [], this._eq.push([e, t, n, i])
+            },
+            setGlobalProperties: function(e) {
+                this._gp = e
+            },
+            onChartsReady: function(e) {
+                this._ocrq = this._ocrq || [], this._ocrq.push(e)
+            }
+        };
+        (function() {
+            var e = document.createElement("script");
+            e.type = "text/javascript", e.async = !0, e.src = ("https:" == document.location.protocol ? "https://" : "http://") + "dc8na2hxrj29i.cloudfront.net/code/keen-2.1.0-min.js";
+            var t = document.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t)
+        })();
+        // Configure the Keen object with your Project ID and (optional) access keys.
+        Keen.configure({
+            projectId: $S.global_conf.KEEN_IO_PROJECT_ID,
+            writeKey: $S.global_conf.KEEN_IO_WRITE_KEY
+        });
+
+        var _strk = _strk || []
+        window.runAfterDomBinding = {
+            add: function(name, fn) {
+                _strk.push(['Page.didMount', fn])
+            }
+        }
+
+        window.strkHooks = {
+            subscribe: function(eventName, cb) {
+                _strk.push([eventName, cb])
+            }
+        }
+    </script>
+    <script>
+        (function() {
+            window.$B || (window.$B = {});
+
+        }).call(this);
+    </script>
+    <script src="./Association test on Strikingly_files/detectIE-4acf9a287c84b71c8f54081e70cd200c.js" async="async">
+    </script>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript" charset="utf-8" async="" src="./Association test on Strikingly_files/22.b350a8417ca5315280b2-site-bundle.js">
+    </script>
+    <script type="text/javascript" charset="utf-8" async="" src="./Association test on Strikingly_files/3.b350a8417ca5315280b2-site-bundle.js">
+    </script>
+    <script type="text/javascript" charset="utf-8" async="" src="./Association test on Strikingly_files/31.b350a8417ca5315280b2-site-bundle.js">
+    </script>
+    <script charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/btype.js">
+    </script>
+    <script type="text/javascript" charset="utf-8" async="" src="./Association test on Strikingly_files/43.b350a8417ca5315280b2-site-bundle.js">
+    </script>
+    <style type="text/css">
+        .fancybox-margin {
+            margin-right: 0px;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8" async="" src="./Association test on Strikingly_files/button.3943c052be33b5e812dac6838df9cb3d.js">
+    </script>
+    <style type="text/css">
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_reposition {
+            overflow: hidden;
+            position: relative
+        }
+
+        .fb_invisible {
+            display: none
+        }
+
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal
+        }
+
+        .fb_reset>div {
+            overflow: hidden
+        }
+
+        .fb_link img {
+            border: none
+        }
+
+        @keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95)
+            }
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .fb_animate {
+            animation: fb_transform .3s forwards
+        }
+
+        .fb_dialog {
+            background: rgba(82, 82, 82, .7);
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_reset .fb_dialog_legacy {
+            overflow: visible
+        }
+
+        .fb_dialog_advanced {
+            padding: 10px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px
+        }
+
+        .fb_dialog_content {
+            background: #fff;
+            color: #333
+        }
+
+        .fb_dialog_close_icon {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+            _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);
+            cursor: pointer;
+            display: block;
+            height: 15px;
+            position: absolute;
+            right: 18px;
+            top: 17px;
+            width: 15px
+        }
+
+        .fb_dialog_mobile .fb_dialog_close_icon {
+            top: 5px;
+            left: 5px;
+            right: auto
+        }
+
+        .fb_dialog_padding {
+            background-color: transparent;
+            position: absolute;
+            width: 1px;
+            z-index: -1
+        }
+
+        .fb_dialog_close_icon:hover {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;
+            _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)
+        }
+
+        .fb_dialog_close_icon:active {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;
+            _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)
+        }
+
+        .fb_dialog_loader {
+            background-color: #f6f7f9;
+            border: 1px solid #606060;
+            font-size: 24px;
+            padding: 20px
+        }
+
+        .fb_dialog_top_left,
+        .fb_dialog_top_right,
+        .fb_dialog_bottom_left,
+        .fb_dialog_bottom_right {
+            height: 10px;
+            width: 10px;
+            overflow: hidden;
+            position: absolute
+        }
+
+        .fb_dialog_top_left {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;
+            left: -10px;
+            top: -10px
+        }
+
+        .fb_dialog_top_right {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;
+            right: -10px;
+            top: -10px
+        }
+
+        .fb_dialog_bottom_left {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;
+            bottom: -10px;
+            left: -10px
+        }
+
+        .fb_dialog_bottom_right {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;
+            right: -10px;
+            bottom: -10px
+        }
+
+        .fb_dialog_vert_left,
+        .fb_dialog_vert_right,
+        .fb_dialog_horiz_top,
+        .fb_dialog_horiz_bottom {
+            position: absolute;
+            background: #525252;
+            filter: alpha(opacity=70);
+            opacity: .7
+        }
+
+        .fb_dialog_vert_left,
+        .fb_dialog_vert_right {
+            width: 10px;
+            height: 100%
+        }
+
+        .fb_dialog_vert_left {
+            margin-left: -10px
+        }
+
+        .fb_dialog_vert_right {
+            right: 0;
+            margin-right: -10px
+        }
+
+        .fb_dialog_horiz_top,
+        .fb_dialog_horiz_bottom {
+            width: 100%;
+            height: 10px
+        }
+
+        .fb_dialog_horiz_top {
+            margin-top: -10px
+        }
+
+        .fb_dialog_horiz_bottom {
+            bottom: 0;
+            margin-bottom: -10px
+        }
+
+        .fb_dialog_iframe {
+            line-height: 0
+        }
+
+        .fb_dialog_content .dialog_title {
+            background: #6d84b4;
+            border: 1px solid #365899;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0
+        }
+
+        .fb_dialog_content .dialog_title>span {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+            float: left;
+            padding: 5px 0 7px 26px
+        }
+
+        body.fb_hidden {
+            -webkit-transform: none;
+            height: 100%;
+            margin: 0;
+            overflow: visible;
+            position: absolute;
+            top: -10000px;
+            left: 0;
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 10001
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered {
+            width: auto;
+            height: auto;
+            min-height: initial;
+            min-width: initial;
+            background: none
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+            background: none
+        }
+
+        .loading.centered #fb_dialog_loader_close {
+            color: #fff;
+            display: block;
+            padding-top: 20px;
+            clear: both;
+            font-size: 18px
+        }
+
+        #fb-root #fb_dialog_ipad_overlay {
+            background: rgba(0, 0, 0, .45);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            min-height: 100%;
+            z-index: 10000
+        }
+
+        #fb-root #fb_dialog_ipad_overlay.hidden {
+            display: none
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading iframe {
+            visibility: hidden
+        }
+
+        .fb_dialog_content .dialog_header {
+            -webkit-box-shadow: white 0 1px 1px -1px inset;
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));
+            border-bottom: 1px solid;
+            border-color: #1d4088;
+            color: #fff;
+            font: 14px Helvetica, sans-serif;
+            font-weight: bold;
+            text-overflow: ellipsis;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+            vertical-align: middle;
+            white-space: nowrap
+        }
+
+        .fb_dialog_content .dialog_header table {
+            -webkit-font-smoothing: subpixel-antialiased;
+            height: 43px;
+            width: 100%
+        }
+
+        .fb_dialog_content .dialog_header td.header_left {
+            font-size: 12px;
+            padding-left: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+
+        .fb_dialog_content .dialog_header td.header_right {
+            font-size: 12px;
+            padding-right: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+
+        .fb_dialog_content .touchable_button {
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));
+            border: 1px solid #29487d;
+            -webkit-background-clip: padding-box;
+            -webkit-border-radius: 3px;
+            -webkit-box-shadow: rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;
+            display: inline-block;
+            margin-top: 3px;
+            max-width: 85px;
+            line-height: 18px;
+            padding: 4px 12px;
+            position: relative
+        }
+
+        .fb_dialog_content .dialog_header .touchable_button input {
+            border: none;
+            background: none;
+            color: #fff;
+            font: 12px Helvetica, sans-serif;
+            font-weight: bold;
+            margin: 2px -12px;
+            padding: 2px 6px 3px 6px;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+        }
+
+        .fb_dialog_content .dialog_header .header_center {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle
+        }
+
+        .fb_dialog_content .dialog_content {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+            border: 1px solid #555;
+            border-bottom: 0;
+            border-top: 0;
+            height: 150px
+        }
+
+        .fb_dialog_content .dialog_footer {
+            background: #f6f7f9;
+            border: 1px solid #555;
+            border-top-color: #ccc;
+            height: 40px
+        }
+
+        #fb_dialog_loader_close {
+            float: left
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+            visibility: hidden
+        }
+
+        #fb_dialog_loader_spinner {
+            animation: rotateSpinner 1.2s linear infinite;
+            background-color: transparent;
+            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            height: 24px;
+            width: 24px
+        }
+
+        @keyframes rotateSpinner {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fb_iframe_widget {
+            display: inline-block;
+            position: relative
+        }
+
+        .fb_iframe_widget span {
+            display: inline-block;
+            position: relative;
+            text-align: justify
+        }
+
+        .fb_iframe_widget iframe {
+            position: absolute
+        }
+
+        .fb_iframe_widget_fluid_desktop,
+        .fb_iframe_widget_fluid_desktop span,
+        .fb_iframe_widget_fluid_desktop iframe {
+            max-width: 100%
+        }
+
+        .fb_iframe_widget_fluid_desktop iframe {
+            min-width: 220px;
+            position: relative
+        }
+
+        .fb_iframe_widget_lift {
+            z-index: 1
+        }
+
+        .fb_hide_iframes iframe {
+            position: relative;
+            left: -10000px
+        }
+
+        .fb_iframe_widget_loader {
+            position: relative;
+            display: inline-block
+        }
+
+        .fb_iframe_widget_fluid {
+            display: inline
+        }
+
+        .fb_iframe_widget_fluid span {
+            width: 100%
+        }
+
+        .fb_iframe_widget_loader iframe {
+            min-height: 32px;
+            z-index: 2;
+            zoom: 1
+        }
+
+        .fb_iframe_widget_loader .FB_Loader {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;
+            height: 32px;
+            width: 32px;
+            margin-left: -16px;
+            position: absolute;
+            left: 50%;
+            z-index: 4
+        }
+    </style>
+</head>
+
+<body class="show locale-en" id="user_sites" ontouchstart="" screen_capture_injected="true">
+    <div id="s-page-container">
+        <div data-reactroot="" data-reactid="1">
+            <!-- react-empty: 2 -->
+            <div id="s-content" class="s-variation-default s-font-heading-playfair-display s-font-title-default s-font-body-default" data-reactid="3">
+                <div class="social-thumbnail" data-reactid="4">
+                    <div style="display:none;" data-reactid="5"><img src="./Association test on Strikingly_files/default-715654470f8f9a657474bf68cefc382f.png" alt="page thumbnail" width="300" height="300" data-reactid="6"></div>
+                    <div id="lw-share-data" style="display:none;" data-reactid="7">
+                        <div class="lws-title" data-reactid="8">Association test</div>
+                        <div class="lws-description" data-reactid="9">Website</div>
+                        <div class="lws-image" data-reactid="10">http://assets.strikingly.com/assets/fb_images/default-715654470f8f9a657474bf68cefc382f.png</div>
+                    </div>
+                </div>
+                <div class="s-navbar-section navigator side-header strikingly-fixed" id="header-container" data-reactid="11">
+                    <div class="header-inner" data-reactid="13">
+                        <ul class="s-nav" data-reactid="14">
+                            <li data-reactid="15">
+                                <a class="s-nav-item" href="#1" data-reactid="16">
+                                    <span class="s-font-body" data-reactid="17">China-Europe Greenfield</span>
+                                </a>
+                            </li>
+                            <li data-reactid="18">
+                                <a class="s-nav-item selected" href="#2" data-reactid="19">
+                                    <span class="s-font-body" data-reactid="20">
+                                        greenfield of creating
+                                    </span>
+                                </a>
+                            </li>
+                            <li data-reactid="21">
+                                <a class="s-nav-item" href="#3" data-reactid="22">
+                                    <span class="s-font-body" data-reactid="23">Club members come from</span>
+                                </a>
+                            </li>
+                            <li data-reactid="24">
+                                <a class="s-nav-item" href="#4" data-reactid="25">
+                                    <span class="s-font-body" data-reactid="26">Contact Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s-navbar-container" data-reactid="27">
+                    <div class="navbar-drawer-bar strikingly-nav-transition" data-reactid="28">
+                        <div class="drawer-container" data-reactid="29">
+                            <a class="navbar" href="javascript:void(0);" data-reactid="30">
+                                <div class="navbar-icons" data-reactid="31"><span data-reactid="32"></span><span data-reactid="33"></span><span data-reactid="34"></span></div>
+                            </a>
+                            <div id="s-mobile-shopping-cart-new" data-reactid="35"></div>
+                            <div class="navbar-drawer-title-container" data-reactid="36"></div>
+                        </div>
+                    </div>
+                    <div id="navbar-drawer-mask" data-reactid="37"></div>
+                    <div class="navbar-drawer strikingly-drawer strikingly-nav-transition" data-reactid="38">
+                        <ul id="nav-drawer-list" data-reactid="39"><span data-reactid="40"><li data-reactid="41"><a class="navbar-drawer-item s-font-body" href="http://associationtest.strikingly.com/#1" data-reactid="42">China-Europe Greenfield</a></li></span><span data-reactid="43"><li data-reactid="44"><a class="navbar-drawer-item s-font-body selected" href="http://associationtest.strikingly.com/#2" data-reactid="45">greenfield of creating</a></li></span>
+                            <span
+                                data-reactid="46">
+                                <li data-reactid="47">
+                                    <a class="navbar-drawer-item s-font-body" href="http://associationtest.strikingly.com/#3" data-reactid="48">Club members come from</a>
+                                </li>
+                            </span>
+                            <span data-reactid="49">
+                                <li data-reactid="50">
+                                    <a class="navbar-drawer-item s-font-body" href="http://associationtest.strikingly.com/#4" data-reactid="51">Contact Us</a>
+                                </li>
+                            </span>
+                            <li class="logo" data-reactid="52">
+                                <a class="logo" href="https://www.strikingly.com/?ref=logo&amp;permalink=associationtest&amp;m=1" target="_blank" data-reactid="53">
+                                    <div class="msg" data-reactid="54">Powered By</div>
+                                    <img src="./Association test on Strikingly_files/logo-small-2.png" style="height:28px;" alt="Strikingly" data-reactid="55">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-actions strikingly-nav-transition" data-reactid="56" style="height: 172px;">
+                        <ul id="mobile-action-list" data-reactid="57">
+                            <!-- react-empty: 58 -->
+                        </ul>
+                    </div>
+                </div>
+                <ul class="slides s-page-1" data-reactid="59">
+                    <li class="slide s-section-1" id="1" data-reactid="60">
+                        <div class="waypoint" data-reactid="61"></div>
+                        <a class="section-anchor" data-reactid="62"></a>
+                        <div data-reactid="63">
+                            <div data-reactid="64">
+                                <!-- react-text: 65 -->
+                                <!-- /react-text -->
+                                <div class="s-bg-image s-bg-light-text s-bg-overlay s-new-title-section s-section" style="background-repeat: no-repeat; background-size: cover; background-color: transparent; background-position: center center; background-image: url(static/photo-1449157291145-7efd050a4d0e.jpeg); min-height: 604px;"
+                                    data-reactid="66" data-layout-type="centerFull">
+                                    <!-- react-text: 67 -->
+                                    <!-- /react-text -->
+                                    <div class="s-persp-container s-layout-center" data-reactid="68" style="padding-bottom: 193px; padding-top: 193px;">
+                                        <div class="s-persp-column" data-reactid="69">
+                                            <!-- react-text: 70 -->
+                                            <!-- /react-text -->
+                                            <div class="media-wrapper " data-reactid="71">
+                                                <div class="s-component s-media " data-reactid="72"><span data-reactid="73"><div class="s-component-content" data-reactid="74"><div data-reactid="75"><!-- react-text: 76 -->
+  <!-- /react-text --><img src="./Association test on Strikingly_files/logo_ta2x7m.png" alt="" title="" data-description="" data-reactid="77"><!-- react-text: 78 -->
+<!-- /react-text --></div></div></span></div>
+                                            </div>
+                                            <div class="s-title-group s-only-title-group " data-reactid="79">
+                                                <div class="s-subtitle" data-reactid="80">
+                                                    <div class="s-component s-text" data-reactid="81">
+                                                        <h4 class="s-component-content s-font-heading" data-reactid="82"><p><strong><em>Platform for China-Europe Business Exchanges</em></strong></p></h4></div>
+                                                </div>
+                                                <div class="s-title " data-reactid="83">
+                                                    <div class="s-component s-text" data-reactid="84">
+                                                        <h1 class="s-component-content s-font-title" data-reactid="85"><p style="font-size:130%">China-Europe Greenfield Business Club</p></h1></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- react-text: 86 -->
+                                    <!-- /react-text -->
+                                </div>
+                                <!-- react-text: 87 -->
+                                <!-- /react-text -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide s-section-2" id="2" data-reactid="88">
+                        <div class="waypoint" data-reactid="89"></div>
+                        <a class="section-anchor" data-reactid="90"></a>
+                        <div data-reactid="91">
+                            <div data-reactid="92">
+                                <!-- react-text: 93 -->
+                                <!-- /react-text -->
+                                <div data-reactid="94">
+                                    <div class="s-info-section s-new-text-section s-section s-layout-mediaLeft" data-reactid="95" data-layout-type="sideBySide" style="min-height: 604px;">
+                                        <div class="s-bg-image s-bg-light-text s-bg-overlay s-persp-bg lazyloaded" style="background-repeat: no-repeat; background-size: cover; background-color: transparent; background-position: center center; background-image: url(static/150.jpg);"
+                                            data-bg="//uploads.strikinglycdn.com/static/backgrounds/business-2/150.jpg" data-reactid="96">
+                                            <div class="s-persp-container" data-reactid="97" style="padding-bottom: 178px; padding-top: 178px;">
+                                                <div class="s-title-group  " data-reactid="98">
+                                                    <div class="s-title " data-reactid="99">
+                                                        <div class="s-component s-text" data-reactid="100">
+                                                            <h2 class="s-component-content s-font-title" data-reactid="101">
+                                                                <p>greenfield of creating values for European and chinese companies</p>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="s-subtitle" data-reactid="102">
+                                                        <div class="s-component s-text" data-reactid="103">
+                                                            <h4 class="s-component-content s-font-heading" data-reactid="104"><p style="font-size: 130%;"><em>Explore, Exchange, Brainstorm</em></p></h4></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s-persp-content" data-reactid="105" style="top: 0px;">
+                                            <div class="s-persp-container" data-reactid="106" style="padding-bottom: 115px; padding-top: 114px;">
+                                                <!-- react-text: 107 -->
+                                                <!-- /react-text -->
+                                                <div class="s-mh s-repeatable" data-reactid="108">
+                                                    <div data-reactid="109">
+                                                        <div data-sorting-index="0" class="s-persp-column s-mhi  border-bottom s-repeatable-item" data-reactid="110">
+                                                            <div class="s-info-box" data-reactid="111">
+                                                                <!-- react-empty: 112 -->
+                                                            </div>
+                                                        </div>
+                                                        <div data-sorting-index="1" class="s-persp-column s-mhi half border-bottom border-right s-repeatable-item" data-reactid="113" style="min-height: 168px;">
+                                                            <div class="s-info-box" data-reactid="114">
+                                                                <div class="s-item-text-group " data-reactid="115">
+                                                                    <div class="s-item-title" data-reactid="116">
+                                                                        <div class="s-component s-text" data-reactid="117">
+                                                                            <h3 class="s-component-content s-font-heading" data-reactid="118"><p>$60m</p></h3></div>
+                                                                    </div>
+                                                                    <div class="s-item-text" data-reactid="119">
+                                                                        <div class="s-component s-text" data-reactid="120">
+                                                                            <div class="s-component-content s-font-body" data-reactid="121">
+                                                                                <p>revenues of member companies</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="" data-reactid="122"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div data-sorting-index="2" class="s-persp-column s-mhi half border-bottom s-repeatable-item" data-reactid="123" style="min-height: 168px;">
+                                                            <div class="s-info-box" data-reactid="124">
+                                                                <div class="s-item-text-group " data-reactid="125">
+                                                                    <div class="s-item-title" data-reactid="126">
+                                                                        <div class="s-component s-text" data-reactid="127">
+                                                                            <h3 class="s-component-content s-font-heading" data-reactid="128"><p>10</p></h3></div>
+                                                                    </div>
+                                                                    <div class="s-item-text" data-reactid="129">
+                                                                        <div class="s-component s-text" data-reactid="130">
+                                                                            <div class="s-component-content s-font-body" data-reactid="131">
+                                                                                <p>Areas of businesses</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="" data-reactid="132"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div data-sorting-index="3" class="s-persp-column s-mhi half border-right s-repeatable-item s-last-row" data-reactid="133" style="min-height: 145px;">
+                                                            <div class="s-info-box" data-reactid="134">
+                                                                <div class="s-item-text-group " data-reactid="135">
+                                                                    <div class="s-item-title" data-reactid="136">
+                                                                        <div class="s-component s-text" data-reactid="137">
+                                                                            <h3 class="s-component-content s-font-heading" data-reactid="138"><p>100</p></h3></div>
+                                                                    </div>
+                                                                    <div class="s-item-text" data-reactid="139">
+                                                                        <div class="s-component s-text" data-reactid="140">
+                                                                            <div class="s-component-content s-font-body" data-reactid="141">
+                                                                                <p>Club members</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="" data-reactid="142"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div data-sorting-index="4" class="s-persp-column s-mhi half s-repeatable-item s-last-row" data-reactid="143" style="min-height: 145px;">
+                                                            <div class="s-info-box" data-reactid="144">
+                                                                <div class="s-item-text-group " data-reactid="145">
+                                                                    <div class="s-item-title" data-reactid="146">
+                                                                        <div class="s-component s-text" data-reactid="147">
+                                                                            <h3 class="s-component-content s-font-heading" data-reactid="148"><p>4</p></h3></div>
+                                                                    </div>
+                                                                    <div class="s-item-text" data-reactid="149">
+                                                                        <div class="s-component s-text" data-reactid="150">
+                                                                            <div class="s-component-content s-font-body" data-reactid="151">
+                                                                                <p>Forums to organise</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="" data-reactid="152"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- react-text: 153 -->
+                                                <!-- /react-text -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- react-text: 154 -->
+                                <!-- /react-text -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide s-section-3" id="3" data-reactid="155">
+                        <div class="waypoint" data-reactid="156"></div>
+                        <a class="section-anchor" data-reactid="157"></a>
+                        <div data-reactid="158">
+                            <div data-reactid="159">
+                                <!-- react-text: 160 -->
+                                <!-- /react-text -->
+                                <div class="s-new-media-section s-section s-rows-section s-layout-mediaRight" data-reactid="161" data-layout-type="sideBySide" style="min-height: 604px;">
+                                    <div class="s-bg-image s-bg-light-text s-bg-overlay s-persp-bg lazyloaded" style="background-repeat: no-repeat; background-size: cover; background-color: transparent; background-position: center center; background-image: url(static/161.jpg);"
+                                        data-bg="static/161.jpg" data-reactid="162">
+                                        <div class="s-persp-container" data-reactid="163" style="padding-bottom: 122px; padding-top: 121px;">
+                                            <div class="s-title-group  " data-reactid="164">
+                                                <div class="s-title " data-reactid="165">
+                                                    <div class="s-component s-text" data-reactid="166">
+                                                        <h2 class="s-component-content s-font-title" data-reactid="167">
+                                                            <p>Club members come from</p>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="s-subtitle" data-reactid="168">
+                                                    <div class="s-component s-text" data-reactid="169">
+                                                        <h4 class="s-component-content s-font-heading" data-reactid="170"><p style="font-size:160%"><em>Consulting</em></p><p style="font-size:160%"><em>PE Investment </em></p><p style="font-size:160%"><em>M&amp;A Consulting</em></p><p style="font-size:160%"><em>Corporate Senior Management</em></p></h4></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s-persp-content" data-reactid="171" style="top: 0px;">
+                                        <div class="s-persp-container" data-reactid="172" style="padding-bottom: 56px; padding-top: 56px;">
+                                            <!-- react-text: 173 -->
+                                            <!-- /react-text -->
+                                            <div class=" s-repeatable" data-reactid="174">
+                                                <div data-reactid="175">
+                                                    <div data-sorting-index="0" class="s-repeatable-item" data-reactid="176">
+                                                        <div class="clearfix" data-reactid="177">
+                                                            <div class="" data-reactid="178">
+                                                                <div class="s-item-media-wrapper s-persp-column half" data-reactid="179">
+                                                                    <div class="s-item-media-group" data-reactid="180">
+                                                                        <div class="s-component s-media " data-reactid="181"><span data-reactid="182"><div class="s-component-content" data-reactid="183"><div data-reactid="184"><!-- react-text: 185 -->
+  <!-- /react-text --><div class="s-ratio-box" style="max-width:310px;max-height:169px;" data-reactid="186"><div class="s-ratio-fill" style="padding-bottom:54.52%;" data-reactid="187"></div><div data-reactid="188"><img alt="" title="" data-description="" width="310" height="169" src="./Association test on Strikingly_files/pharma_v2mv6t.jpg" class="lazyautosizes lazyloaded" data-src="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto/v1/1005867/pharma_v2mv6t.jpg" data-sizes="auto" data-reactid="189" sizes="270px"></div></div><!-- react-text: 190 -->
+<!-- /react-text --></div></div></span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="s-persp-column half" data-reactid="191">
+                                                                    <div class="s-item-text-group " data-reactid="192">
+                                                                        <div class="s-item-title" data-reactid="193">
+                                                                            <div class="s-component s-text" data-reactid="194">
+                                                                                <h3 class="s-component-content s-font-heading" data-reactid="195"><p>Forum on Pharma</p></h3></div>
+                                                                        </div>
+                                                                        <div class="s-item-subtitle" data-reactid="196">
+                                                                            <div class="s-component s-text" data-reactid="197">
+                                                                                <h6 class="s-component-content s-font-body" data-reactid="198"><p>Cross-border biotech investment</p></h6></div>
+                                                                        </div>
+                                                                        <div class="s-item-text" data-reactid="199">
+                                                                            <div class="s-component s-text" data-reactid="200"></div>
+                                                                        </div>
+                                                                        <div class="" data-reactid="201"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-sorting-index="1" class="s-repeatable-item s-last-row" data-reactid="202">
+                                                        <div class="clearfix" data-reactid="203">
+                                                            <div class="" data-reactid="204">
+                                                                <div class="s-item-media-wrapper s-persp-column half" data-reactid="205">
+                                                                    <div class="s-item-media-group" data-reactid="206">
+                                                                        <div class="s-component s-media " data-reactid="207"><span data-reactid="208"><div class="s-component-content" data-reactid="209"><div data-reactid="210"><!-- react-text: 211 -->
+  <!-- /react-text --><div class="s-ratio-box" style="max-width:275px;max-height:148px;" data-reactid="212"><div class="s-ratio-fill" style="padding-bottom:53.82%;" data-reactid="213"></div><div data-reactid="214"><img alt="" title="" data-description="" width="275" height="148" src="./Association test on Strikingly_files/defence_gjhvmq.jpg" class="lazyautosizes lazyloaded" data-src="//res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto/v1/1005867/defence_gjhvmq.jpg" data-sizes="auto" data-reactid="215" sizes="270px"></div></div><!-- react-text: 216 -->
+<!-- /react-text --></div></div></span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="s-persp-column half" data-reactid="217">
+                                                                    <div class="s-item-text-group " data-reactid="218">
+                                                                        <div class="s-item-title" data-reactid="219">
+                                                                            <div class="s-component s-text" data-reactid="220">
+                                                                                <h3 class="s-component-content s-font-heading" data-reactid="221"><p>Forum on Defense</p></h3></div>
+                                                                        </div>
+                                                                        <div class="s-item-subtitle" data-reactid="222">
+                                                                            <div class="s-component s-text" data-reactid="223">
+                                                                                <h6 class="s-component-content s-font-body" data-reactid="224"><p>Next 10 years' strategy</p></h6></div>
+                                                                        </div>
+                                                                        <div class="s-item-text" data-reactid="225">
+                                                                            <div class="s-component s-text" data-reactid="226"></div>
+                                                                        </div>
+                                                                        <div class="" data-reactid="227"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- react-text: 228 -->
+                                            <!-- /react-text -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- react-text: 229 -->
+                                <!-- /react-text -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slide s-section-4" id="4" data-reactid="230">
+                        <div class="waypoint" data-reactid="231"></div>
+                        <a class="section-anchor" data-reactid="232"></a>
+                        <div class="s-section s-contact-section s-layout-mediaLeft" data-reactid="233" data-layout-type="sideBySide" style="min-height: 604px;">
+                            <div class="s-bg-image s-bg-light-text s-bg-overlay s-persp-bg lazyloaded" style="background-repeat: no-repeat; background-size: cover; background-color: transparent; background-position: center center; background-image: url(static/144.jpg);"
+                                data-bg="static/144.jpg" data-reactid="234">
+                                <div class="s-persp-container" data-reactid="235" style="padding-bottom: 229px; padding-top: 229px;">
+                                    <div class="s-title-group  " data-reactid="236">
+                                        <div class="s-title " data-reactid="237">
+                                            <div class="s-component s-text" data-reactid="238">
+                                                <h2 class="s-component-content s-font-title" data-reactid="239">
+                                                    <p>Contact Us</p>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="s-subtitle" data-reactid="240">
+                                            <div class="s-component s-text" data-reactid="241">
+                                                <h4 class="s-component-content s-font-heading" data-reactid="242">
+                                                    <p>Don't be afraid to reach out. You + us = awesome.</p>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-persp-content" data-reactid="243" style="top: 0px;">
+                                <div class="s-persp-container" data-reactid="244" style="padding-bottom: 131px; padding-top: 130px;">
+                                    <div class="s-persp-column s-email-form-container s-layout-vertical" data-reactid="245">
+                                        <div data-reactid="246">
+                                            <div class="s-component s-form s-email-form" data-reactid="247">
+                                                <span data-reactid="248">
+                                                    <div class="s-component-content" data-reactid="249">
+                                                        <div data-reactid="250">
+                                                            <div class="s-email-form-fields-group" data-reactid="251">
+                                                                <div class="s-email-form-inputs-group s-email-form-small-fields-2" data-reactid="252">
+                                                                    <div class="s-email-form-small-fields-group" data-reactid="253">
+                                                                        <div class="s-email-form-field s-name-field" data-reactid="254">
+                                                                            <div class="s-font-body" data-reactid="255">
+                                                                                <label data-reactid="256">Name</label>
+                                                                                <input type="text" data-reactid="257">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="s-email-field s-email-form-field" data-reactid="258">
+                                                                            <div class="s-font-body" data-reactid="259">
+                                                                                <label data-reactid="260">Email</label>
+                                                                                <input type="text" data-reactid="261">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="s-email-form-field s-message-field" data-reactid="262">
+                                                                        <div class="s-font-body" data-reactid="264">
+                                                                            <label data-reactid="265">Message</label>
+                                                                            <textarea type="text" data-reactid="266"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="s-email-form-field s-submit-field" data-reactid="268">
+                                                                    <a class="s-common-button s-email-form-button s-font-body" data-reactid="269">
+                                                                        Submit
+                                                                    </a>
+                                                                </div>
+                                                                <div class="s-email-form-field s-hp-field" style="display:none;" data-reactid="273">
+                                                                    <label data-reactid="274">Comment</label>
+                                                                    <input type="text" data-reactid="275">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="waypoint" data-reactid="276"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="fb-root" class=" fb_reset">
+        <div class="facebook_script">
+            <script async="async" src="./Association test on Strikingly_files/all.js"></script>
+        </div>
+        <div class="twitter_script">
+            <script async="async" src="./Association test on Strikingly_files/widgets.js"></script>
+        </div>
+        <div class="gplus_script">
+            <script async="async" src="./Association test on Strikingly_files/plusone.js" gapi_processed="true"></script>
+        </div>
+        <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+            <div></div>
+        </div>
+        <div style="position: absolute; top: -10000px; height: 0px; width: 0px;">
+            <div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Association test on Strikingly_files/iPrOY23SGAp.html"
+                    style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame"
+                    tabindex="-1" src="./Association test on Strikingly_files/iPrOY23SGAp(1).html" style="border: none;"></iframe></div>
+        </div>
+    </div>
+    <div id="app-script-root"></div>
+    <div id="app-view-root"></div>
+    <script id="blog-collection-tmpl" type="text/html">
+        <div class='s-blog-col-head'></div>
+        <div class='s-blog-col-body'> {{ _.each(blogPosts, function(blog) { }}
+            <div class='s-blog-entry'>
+                <div class='s-blog-entry-inner'> {{ if ($S && $S.conf && $S.conf.preview_mode) { }} <a class='s-blog-overlay-link' href='{{=blog.publicUrl}}'>&nbsp;</a> {{ } else { }} <a class='s-blog-overlay-link' href='{{=blog.relativeUrl}}'>&nbsp;</a> {{ } }} {{ if (blog.iconUrl)
+                    { }}
+                    <div class='s-blog-entry-left'> {{ if (UrlHelper.imageHasContent(blog.iconUrl)) { }}
+                        <div class='s-blog-avatar' style='background-image:url({{=blog.iconUrl}});'></div> {{ } else { }}
+                        <div class='s-blog-default-avatar'>
+                            <div class='entypo-bookmark'></div>
+                        </div> {{ } }} </div> {{ } }}
+                    <div class='s-blog-entry-right'>
+                        <div class='s-blog-details'>
+                            <div class='s-blog-details-head s-blog-row'>
+                                <div class='s-blog-title s-font-heading'> {{=blog.title}} </div>
+                                <div class='s-blog-date'> {{=blog.publishedAt}} </div>
+                            </div> {{ if (blogSettings.previewLayout == 1) { }}
+                            <div class='s-blog-details-blurb s-blog-row'> {{=blog.blurb}} </div> {{ } }} </div>
+                    </div>
+                </div>
+            </div> {{ }) }} {{ if (blogPosts.length == 0) { }}
+            <div class='s-blog-entry'>
+                <div class='s-common-status no-posts-error'> There are no blog posts. </div>
+            </div> {{ } }} </div> {{ if (blogPosts.length > 0) { }}
+        <div class='s-blog-col-foot'> <a class='s-blog-link s-blog-next-link' href='javascript:void(0);'> &laquo; Newer </a> &nbsp;
+            <ul class='s-blog-pagination' style='display:none;'>
+                <li>
+                    <a class='s-blog-link s-blog-pagination-page' href='javascript:void(0);'></a>
+                </li>
+            </ul> &nbsp; <a class='s-blog-link s-blog-prev-link' href='javascript:void(0);'> Older &raquo; </a> </div> {{ } }} </script>
+    <script src="./Association test on Strikingly_files/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="//assets.strikingly.com/assets/jquery-3f5e3d9f9d20e0ce2173d773fcdca76d.js"><\/script>');
+    </script>
+    <script src="./Association test on Strikingly_files/i18n-2ad05c23c5a1485c8c77361d3e9e93ab.js"></script>
+    <script src="./Association test on Strikingly_files/site-dll-2b8a79c07ff1fda9d1fb6e2402653804.js"></script>
+    <script src="./Association test on Strikingly_files/page-site-bundle-c6b9673e18740aa3c28f3a2f8d1ac078.js"></script>
+    <!-- Powered by Strikingly.com 4 (1) Dec 19, 2016 at 05:12-->
+    <!--
+    <iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Association test on Strikingly_files/saved_resource.html">
+    </iframe>
+    <iframe name="oauth2relay820911108" id="oauth2relay820911108" src="./Association test on Strikingly_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+-->
+</body>
+
+</html>
